@@ -244,10 +244,6 @@ table <- xtable(data, caption = "Vaccination Statistics \\label{tab1}")
 
 To reference calculations __in text__, _do this:_ From table \ref{tab1} we see the average value of mpg is `r mean(mtcars[1:5,]$mpg)`.
 
-Including tables that span across pages, use the following (note that I add below the table: ``continue on the next page''). This is a neat way of splitting your table across a page.
-
-Use the following default settings to build your own possibly long tables. Note that the following will fit on one page if it can, but cleanly spreads over multiple pages:
-
 ```{r LongTable, results = 'asis'}
 
 library(xtable)
