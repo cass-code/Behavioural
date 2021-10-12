@@ -120,10 +120,33 @@ write_rds(Example_data, path = "data/Example_data.rds")
 <!-- ############################## -->
 <!-- # Start Writing here: -->
 <!-- ############################## -->
+\newpage
 
 # Introduction \label{Introduction}
 
+One critical mechanism through which epidemics are contained is through herd immunity. Herd immunity is where a certain amount of the population is immune to a disease and can be achieved either through a certain threshold of the population being vaccinated or being exposed directly to the disease. Ethically, herd immunity should be achieved through vaccination. In spite of this, many South Africans are hesitant to get the COVID vaccine; @stat reports that only 25% of South Africa's adult population have been fully vaccinated^[Statistics reported as of 11 October 2021]. Governments around the world are devising strategies to contain the pandemic; one solution is to incentivise vaccinations. Here, insights from behaviourial economics could provide a cost-effective solution: a vaccine lottery. 
+
+This essay proposes a field experiment to investigate whether a vaccine lottery could improve vaccination rates in South Africa. Section \ref{lit} briefly reviews the relevant literature on behavioural economics and vaccine lotteries. Section \ref{design} describes the design of the experiment and outlines the three types of treatment groups. Section \label{treat} discusses how the treatment will be administered and how the data will be collected.  Lastly, section \ref{pre} gives a pre-analysis plan of the empirical analysis that will be performed on the data; and the final section (\ref{con}) concludes. 
+
+•	a clear statement of the research question and motivation for why this is interesting and important;
+•	a brief review of the relevant literature (both theoretical and empirical) which highlights the research gap your experiment will address;
+
+•	a clear description of the experimental design and the theory of change;
+•	an explanation of how the treatments will be administered and data gathered (including proposed partner institutions);
+•	a pre-analysis plan of the empirical analysis that will be performed on the data.
+
+amount of people have received the vaccine so far. Critical to reach herd immunity is improving vaccination rates. 
+
+# Vaccine Lotteries and the South African Context \label{lit} 
+
+behavioural economics theory and health incentive applications
+gambling in SA 
+
+
 # Experiment Design \label{design}
+
+The field experiment is designed Research question: could a vaccine lottery improve vaccination rates in South Africa? 
+
 
 
 Have 1 control group: no messages, no lotto
@@ -133,9 +156,9 @@ Have 4 treatment groups:
 •	1 lottery where a friend has to refer you
 •	1 regret lottery: everyone is entered into the lotto (receive sms) and can only win if vaccinated
 Can randomize across municipalities or provinces
+size of sample population for experiment
 
 
-Research question: could a vaccine lottery improve vaccination rates in South Africa?
 Many South Africans are hesitant to get the COVID vaccine. As STATSA shows, amount of people have received the vaccine so far. Critical to reach herd immunity is improving vaccination rates. 
 In order to improve the take-up of vaccinations, a field experiment designed around a vaccination lottery is proposed. While some governments have considered and experimented with lump-sum payments, behavioural economics could provide a more cost-effective solution. Individuals have a tendency to overweight small probabilities and this overestimate their chances of winning a lottery. In South Africa, 
 Lit Review
@@ -145,16 +168,19 @@ Several authors have experimented with lotteries as an incentive for vaccination
 Probles with vaccine studies: too few participants. A larger study could fill this gap in the literature.
 
 
-# Treatment and Data
+# Treatment and Data \label{treat}
 
-# Partner Institutions and Funding
+Partner with NIDS, department of health, vaccine administer, funding
+data collected at vaccine 
+add 3 questions to NIDS data cram
 
-# Pre-analysis plan
+# Pre-analysis plan \label{pre}
 
 Students must submit an essay in which they design a field experiment that could answer an interesting behavioural economic question. The essay must contain the following:
 
 •	a clear statement of the research question and motivation for why this is interesting and important;
 •	a brief review of the relevant literature (both theoretical and empirical) which highlights the research gap your experiment will address;
+
 •	a clear description of the experimental design and the theory of change;
 •	an explanation of how the treatments will be administered and data gathered (including proposed partner institutions);
 •	a pre-analysis plan of the empirical analysis that will be performed on the data.
@@ -278,19 +304,6 @@ table <- xtable(data, caption = "Long Table Example")
 <!-- hfill can be used to create a space, like here between text and table. -->
 
 
-## Huxtable
-
-Huxtable is a very nice package for making working with tables between Rmarkdown and Tex easier.
-
-This cost some adjustment to the Tex templates to make it work, but it now works nicely.
-
-See documentation for this package [here](https://hughjonesd.github.io/huxtable/huxtable.html). A particularly nice addition of this package is for making the printing of regression results a joy (see [here](https://hughjonesd.github.io/huxtable/huxtable.html#creating-a-regression-table)). Here follows an example:
-
-
-If you are eager to use huxtable, comment out the Huxtable table in the Rmd template, and uncomment the colortbl package in your Rmd's root.
-
-Note that I do not include this in the ordinary template, as some latex users have complained it breaks when they build their Rmds (especially those using tidytex - I don't have this problem as I have the full Miktex installed on mine). Up to you, but I strongly recommend installing the package manually and using huxtable. To make this work, uncomment the _Adding additional latex packages_ part in yaml at the top of the Rmd file. Then comment out the huxtable example in the template below this line. Reknit, and enjoy.
-
 ```{r, results = 'asis'}
 
 if(!require(huxtable)) install.packages(huxtable)
@@ -331,7 +344,7 @@ To add lists, simply using the following notation
 
 * Note that Rmarkdown notation removes the pain of defining \LaTeX environments!
 
-# Conclusion
+# Conclusion \label{con}
 
 I hope you find this template useful. Remember, stackoverflow is your friend - use it to find answers to questions. Feel free to write me a mail if you have any questions regarding the use of this package. To cite this package, simply type citation("Texevier") in Rstudio to get the citation for @Texevier (Note that uncited references in your bibtex file will not be included in References).
 
