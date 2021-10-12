@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.21)  12 OCT 2021 13:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.21)  12 OCT 2021 22:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -906,53 +906,47 @@ dftex.map}] (./Write_Up.toc)
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 275.
+(Font)              <9> on input line 276.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 275.
-
-LaTeX Warning: Reference `lit' on page 3 undefined on input line 282.
-
+(Font)              <5> on input line 276.
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-90.
+92.
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [3] [4] [5]
-<Write_Up_files/figure-latex/Figure1-1.png, id=117, 433.62pt x 216.81pt>
+) [3] [4]
+Overfull \hbox (8.80695pt too wide) in paragraph at lines 396--406
+ [][] 
+ []
+
+[5] [6]
+<Write_Up_files/figure-latex/Figure1-1.png, id=136, 433.62pt x 216.81pt>
 File: Write_Up_files/figure-latex/Figure1-1.png Graphic file (type png)
 <use Write_Up_files/figure-latex/Figure1-1.png>
 Package pdftex.def Info: Write_Up_files/figure-latex/Figure1-1.png  used on inp
-ut line 441.
+ut line 538.
 (pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 448--451
-
- []
-
-[6 <./Write_Up_files/figure-latex/Figure1-1.png>] [7]
+[7] [8 <./Write_Up_files/figure-latex/Figure1-1.png>]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14> on input line 642.
+(Font)              <14> on input line 698.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 642.
-[8] [9]
+(Font)              <10> on input line 698.
+[9] [10]
 No file Write_Up.bbl.
-[10] (./Write_Up.aux)
-
-LaTeX Warning: There were undefined references.
-
+[11] (./Write_Up.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Write_Up.out' has not changed.
-(rerunfilecheck)             Checksum: 64B077121F8B93D93B42DFFFA04A6353;1417.
+(rerunfilecheck)             Checksum: 3BA4DC2D6CDFC9DB1500E8D0FC1CA4AF;1556.
  ) 
 Here is how much of TeX's memory you used:
- 16566 strings out of 480559
- 292234 string characters out of 5901444
- 603032 words of memory out of 5000000
+ 16571 strings out of 480559
+ 292333 string characters out of 5901444
+ 600137 words of memory out of 5000000
  33837 multiletter control sequences out of 15000+600000
  471014 words of font info for 78 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,15n,80p,306b,886s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 72i,15n,80p,321b,905s stack positions out of 5000i,500n,10000p,200000b,80000s
 {c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-
 mathit.enc}{c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvi
 ps/lm/lm-ec.enc}{c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/en
@@ -968,10 +962,10 @@ ers/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb
 mr8.pfb><c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/publ
 ic/lm/lmr9.pfb><c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/typ
 e1/public/lm/lmri10.pfb>
-Output written on Write_Up.pdf (10 pages, 256174 bytes).
+Output written on Write_Up.pdf (11 pages, 268676 bytes).
 PDF statistics:
- 232 PDF objects out of 1000 (max. 8388607)
- 194 compressed objects within 2 object streams
- 47 named destinations out of 1000 (max. 500000)
+ 251 PDF objects out of 1000 (max. 8388607)
+ 211 compressed objects within 3 object streams
+ 52 named destinations out of 1000 (max. 500000)
  102 words of extra memory for PDF output out of 10000 (max. 10000000)
 

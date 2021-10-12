@@ -124,9 +124,9 @@ write_rds(Example_data, path = "data/Example_data.rds")
 
 # Introduction \label{Introduction}
 
-One critical mechanism through which epidemics are contained is through herd immunity. Herd immunity is where a certain amount of the population is immune to a disease and can be achieved either through a certain threshold of the population being vaccinated or being exposed directly to the disease. Ethically, herd immunity should be achieved through vaccination. In spite of this, many South Africans are hesitant to get the COVID vaccine; @stat reports that only 25% of South Africa's adult population have been fully vaccinated^[Statistics reported as of 11 October 2021]. Governments around the world are devising strategies to contain the pandemic; one solution is to incentivise vaccinations. Here, insights from behaviourial economics could provide a cost-effective solution: a vaccine lottery. 
+One critical mechanism through which epidemics are contained is through herd immunity. Herd immunity is where a certain amount of the population is immune to a disease and can be achieved through a certain threshold of the population being vaccinated. The South African government has stated that it aims to have 67% of the population vaccinated by the end of 2021 (@herd). In spite of this, many South Africans are hesitant to get the COVID vaccine; @stat reports that only 25% of South Africa's adult population have been fully vaccinated^[Statistics reported as of 11 October 2021]. Governments around the world are devising strategies to contain the pandemic; one solution is to incentivise vaccinations. Here, insights from behaviourial economics could provide a cost-effective solution: a vaccine lottery. 
 
-This essay proposes a field experiment to investigate whether a vaccine lottery could improve vaccination rates in South Africa. Section \ref{lit} briefly reviews the relevant literature on behavioural economics and vaccine lotteries. Section \ref{design} describes the design of the experiment and outlines the three types of treatment groups. Section \label{treat} discusses how the treatment will be administered and how the data will be collected.  Lastly, section \ref{pre} gives a pre-analysis plan of the empirical analysis that will be performed on the data; and the final section (\ref{con}) concludes. 
+This essay proposes a field experiment to investigate whether a vaccine lottery could improve vaccination rates in South Africa. Section \ref{lit} briefly reviews the relevant literature on behavioural economics and vaccine lotteries. Section \ref{design} describes the design of the experiment and outlines the three types of treatment groups. Section \label{treat} discusses how the treatment will be administered and how the data will be collected.  Lastly, section \ref{pre} gives a pre-analysis plan of the empirical analysis that will be performed on the data, and the final section (\ref{con}) concludes. 
 
 •	a clear statement of the research question and motivation for why this is interesting and important;
 •	a brief review of the relevant literature (both theoretical and empirical) which highlights the research gap your experiment will address;
@@ -137,15 +137,78 @@ This essay proposes a field experiment to investigate whether a vaccine lottery 
 
 amount of people have received the vaccine so far. Critical to reach herd immunity is improving vaccination rates. 
 
-# Vaccine Lotteries and the South African Context \label{lit} 
+# Behavioural Economics and Health Incentives  \label{lit} 
+
+It is not unprecedented to use lotteries in public health interventions. To the best of my knowledge, this experiment would be the first randomized field experiment to assess the impact of lotteries on COVID-19 vaccine take-up in South Africa.
+
 
 behavioural economics theory and health incentive applications
 gambling in SA 
 
+This paper addresses the gap pf vaccine lotteries in SA.
+
+# The South African Context
+There are currently four vaccines which have been approved by the South African Health Products Regulatory Authority for use in South Africa: Johnson & Johnson (J&J), Pfizer, Sinovac and AstraZeneca. The two main vaccines being rolled out in South Africa are the J&J and Pfizer, which are both available for free. Vaccines are currently only available to individuals over the age of 18. The J&J vaccine only requires 1 dose; and the Pfizer vaccine requires two doses, 6 weeks apart. For the purposes of this field experiment, _fully vaccinated_ refers to an individual who has had either 1 J&J shot, or both shots of the Pfizer vaccine. _Vaccinated_ refers to an individual who has had 1 shot of either vaccine.
+
+According to @stat, 34% of South Africans are vaccinated, while only 25% are fully vaccinated. 
+
+```{r tab1, results = 'asis', warning=FALSE, message=FALSE, echo=FALSE}
+
+library(xtable)
+source("code/vac_stats1.R")
+data<- vac_stats1()
+
+table <- xtable(data, caption = "Vaccination Statistics \\label{tab1}")
+  print.xtable(table,
+             # tabular.environment = "longtable",
+             floating = TRUE,
+             table.placement = 'H',
+             # scalebox = 0.3,
+             comment = FALSE,
+             caption.placement = 'bottom',
+             include.rownames = FALSE,
+             booktabs = T # Aesthetics
+             )
+
+```
 
 # Experiment Design \label{design}
 
 The field experiment is designed Research question: could a vaccine lottery improve vaccination rates in South Africa? 
+
+The sample used will be the same as for NIDS CRAM. Nationally representative, other data included, only pay for marginal cost of including extra questions
+
+The NIDS CRAM sample will be split into 4 random groups, which will be randomised using the randomisation technique as proposed by @. The first group is the control group, where individuals will not be entered into any vaccine lottery. The other 3 groups are will receive different lottery treatments. There will be 3 monthly lotteries for each treatment group, which will run simultaneously. Thus, in total there will be 9 lotteries for this field experiment, with 3 lotteries every month. The cash prize of 
+
+For the first treatment group, if an individual has received a vaccination shot^[An individual only need a receive one shot of any vaccine - receiving the first shot of the Pfizer qualifies an individual for that month's lottery] within a given month, she will be entered into that month's vaccine lottery. At the end of the month, a winner is randomly selected from the lottery pool. Once it is verifed that the winner has been vaccinated, she will be privately contacted and will receive a cash prize. It will then be announced via sms to everyone in the treatment group (group 1) that the lottery has been won, the amount of the lottery prize, and the winner's province. 
+
+Following the approach of @regret, the second lottery is a "regret lottery". Every individual in the sample is entered into a monthly lottery but an individual may only claim her prize if she has been vaccinated (i.e. had at least 1 shot of any vaccine). At month end, a winner is randomly drawn from the lottery pool. If the winner has been vaccinated, she will be privately notified and will receive a cash prize. It will then be announced via sms to everyone in the treatment group (group 2) that the lottery has been won, the amount of the cash prize, the winner's province and a reminder that only vaccinated individuals are eligible to win the lottery.
+
+The final treatment is a "referral lottery". 
+
+Table \ref{tab2} summarises the different treatments administered.
+
+
+```{r tab2, results = 'asis', warning=FALSE, message=FALSE, echo=FALSE}
+
+library(xtable)
+source("code/experiments.R")
+data<- experiments()
+
+table <- xtable(data, caption = "Treatment Summary \\label{tab2}")
+  print.xtable(table,
+             # tabular.environment = "longtable",
+             floating = TRUE,
+             table.placement = 'H',
+             # scalebox = 0.3,
+             comment = FALSE,
+             caption.placement = 'bottom',
+             include.rownames = FALSE,
+             booktabs = T # Aesthetics
+             )
+
+```
+
 
 
 
@@ -224,49 +287,7 @@ g
 
 ```
 
-According to @stat, 34% of South Africans are vaccinated, while only 25% are fully vaccinated.  
-```{r ShortTable, results = 'asis'}
 
-library(xtable)
-library(dplyr)
-
-Province <- c("Eastern Cape", "Free State","Gauteng", "KwaZulu-Natal", "Limpopo", "Mpumalanga", "North West", "Northern Cape", "Western Cape", "Total")
-vaccine <- c(1603045,735696,3523373,2170526,1437846,831759,835206,290962,2141933)
-sum <- sum(vaccine)
-
-population <- c(4099543,1914521,11311326,7219795,3695801,3039520,2693247,847545,4976903)
-
-s <- sum(population)
-
-percent <- as.character(c(round((vaccine/population)*100))) 
-
-symbol <- c("%","%","%","%","%","%","%","%","%")
-
-per <- paste(percent, symbol, sep = "")
-
-l <- sum/s
-
-pe <- c(per, "34%")
-
-vac <- c("1 603 045","735 696","3 523 373","2 170 526","1 437 846","831 759","835 206","290 962","2 141 933", "13 570 346")
-
-pop <- c("4 099 543","1 914 521","11 311 326","7 219 795","3 695 801","3 039 520","2 693 247","847 545","4 976 903", "39 798 201")
-   
-data <- data.frame(Province, vac, pop, pe) %>% rename("Percentage Vaccinated" = pe) %>% rename("Total Adults Vaccinated" = vac, "Adult Population" = pop)
-
-table <- xtable(data, caption = "Vaccination Statistics \\label{tab1}")
-  print.xtable(table,
-             # tabular.environment = "longtable",
-             floating = TRUE,
-             table.placement = 'H',
-             # scalebox = 0.3,
-             comment = FALSE,
-             caption.placement = 'bottom',
-             include.rownames = FALSE,
-             booktabs = T # Aesthetics
-             )
-
-```
 
 To reference calculations __in text__, _do this:_ From table \ref{tab1} we see the average value of mpg is `r mean(mtcars[1:5,]$mpg)`.
 
