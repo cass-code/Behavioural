@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.21)  13 OCT 2021 13:10
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.21)  13 OCT 2021 14:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -761,40 +761,45 @@ LaTeX Info: Redefining \nameref on input line 166.
 
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 1
-99.
+<Tex/logo.png, id=48, 501.875pt x 330.23375pt>
+File: Tex/logo.png Graphic file (type png)
+<use Tex/logo.png>
+Package pdftex.def Info: Tex/logo.png  used on input line 183.
+(pdftex.def)             Requested size: 326.30098pt x 214.71489pt.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
+03.
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 1
-99.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
+03.
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-199.
+203.
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-199.
+203.
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 199.
+(Font)              <10.95> on input line 203.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 199.
+(Font)              <8> on input line 203.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 199.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 199
+(Font)              <6> on input line 203.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 203
 .
 
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.
 fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 199
+LaTeX Font Info:    Trying to load font information for U+msb on input line 203
 .
 
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.
@@ -803,7 +808,7 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 {c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-var/fonts/map/pdftex/updmap/p
-dftex.map}] (./Write_Up.toc)
+dftex.map} <./Tex/logo.png>] (./Write_Up.toc)
 \tf@toc=\write5
 \openout5 = `Write_Up.toc'.
 
@@ -812,71 +817,71 @@ dftex.map}] (./Write_Up.toc)
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 258.
+(Font)              <9> on input line 261.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 258.
-
-LaTeX Warning: Reference `cont' on page 3 undefined on input line 287.
-
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 2
-95.
+(Font)              <5> on input line 261.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
+10.
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) [3] [4] [5]
-Overfull \hbox (35.0871pt too wide) in paragraph at lines 469--479
+Overfull \hbox (35.0871pt too wide) in paragraph at lines 484--494
  [][] 
  []
 
 [6] [7] [8]
-<Write_Up_files/figure-latex/Figure1-1.png, id=170, 433.62pt x 216.81pt>
+<Write_Up_files/figure-latex/Figure1-1.png, id=173, 433.62pt x 216.81pt>
 File: Write_Up_files/figure-latex/Figure1-1.png Graphic file (type png)
 <use Write_Up_files/figure-latex/Figure1-1.png>
 Package pdftex.def Info: Write_Up_files/figure-latex/Figure1-1.png  used on inp
-ut line 607.
+ut line 612.
 (pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
-[9 <./Write_Up_files/figure-latex/Figure1-1.png>] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 745--749
+[9 <./Write_Up_files/figure-latex/Figure1-1.png>] [10]
+Underfull \hbox (badness 10000) in paragraph at lines 749--753
 \T1/lmr/m/it/10.95 world\T1/lmr/m/n/10.95 . [On-line], Avail-able: [][]$https :
  / / www . worldbank . org / en / news / feature / 2020 / 06 / 08 /
  []
 
-[12]
+[11]
 No file Write_Up.bbl.
-[13] (./Write_Up.aux)
-
-LaTeX Warning: There were undefined references.
-
+[12] (./Write_Up.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Write_Up.out' has not changed.
-(rerunfilecheck)             Checksum: 56FA6030475A1A3E2BECF77BD27BF579;1545.
+(rerunfilecheck)             Checksum: 479501E6DF3BF2D24AD569809CCD2728;1494.
  ) 
 Here is how much of TeX's memory you used:
- 15273 strings out of 480559
- 270368 string characters out of 5901444
- 575647 words of memory out of 5000000
- 32581 multiletter control sequences out of 15000+600000
+ 15281 strings out of 480559
+ 270471 string characters out of 5901444
+ 572769 words of memory out of 5000000
+ 32587 multiletter control sequences out of 15000+600000
  462878 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,12n,80p,321b,893s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-
-ec.enc}{c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/l
-m/lm-ts1.enc}<c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
-/public/lm/lmbx10.pfb><c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fo
-nts/type1/public/lm/lmbx12.pfb><c:/Users/Cassandra/AppData/Roaming/TinyTeX/texm
-f-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/Cassandra/AppData/Roaming/Tiny
-TeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/Cassandra/AppData/Roam
-ing/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Cassandra/AppD
-ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/Cassand
-ra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/
-Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:
-/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri1
-0.pfb>
-Output written on Write_Up.pdf (13 pages, 273615 bytes).
+ 72i,12n,80p,321b,905s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{ref-grinold2000} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{ref-fama1997} has been referenced but does not exis
+t, replaced by a fixed one
+
+{c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec
+.enc}{c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/
+lm-ts1.enc}<c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/p
+ublic/lm/lmbx10.pfb><c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/font
+s/type1/public/lm/lmbx12.pfb><c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-
+dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/Cassandra/AppData/Roaming/TinyTe
+X/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/Cassandra/AppData/Roamin
+g/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Cassandra/AppDat
+a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/Cassandra
+/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/Ca
+ssandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/U
+sers/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.
+pfb>
+Output written on Write_Up.pdf (12 pages, 868200 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 241 compressed objects within 3 object streams
+ 275 PDF objects out of 1000 (max. 8388607)
+ 235 compressed objects within 3 object streams
  59 named destinations out of 1000 (max. 500000)
- 94 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 99 words of extra memory for PDF output out of 10000 (max. 10000000)
 

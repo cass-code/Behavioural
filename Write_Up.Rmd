@@ -14,8 +14,8 @@ Thesis_FP: TRUE
 Entry1: "COVID-19 vaccine Lottery Field Experiment"
 Entry2: "\\textbf{Cassandra Pengelly}" # textbf for bold
 Entry3: "Behavioural Economics 871 Essay"
-#Uni_Logo: Tex/Logo.png # Place a logo in the indicated location (from your root, e.g. defaults to ~/Tex/Logo.png) and uncomment this line. Leave uncommented for no image
-#Logo_width: 0.3 # If using a logo - use this to set width (size) of image
+Uni_Logo: Tex/logo.png # Place a logo in the indicated location (from your root, e.g. defaults to ~/Tex/Logo.png) and uncomment this line. Leave uncommented for no image
+Logo_width: 0.9 # If using a logo - use this to set width (size) of image
 Entry4: "15 October 2021"
 # Entry5: "Stellenbosch University"
 # Entry6: April 2020
@@ -124,11 +124,11 @@ write_rds(Example_data, path = "data/Example_data.rds")
 
 # Introduction \label{Introduction}
 
-Coronavirus disease 2019 (COVID-19) has caused the largest public health crisis, and economic disaster of the 21st century so far (@bad p.471). According to the @who, COVID-19 has directly resulted in 4,859,277 deaths worldwide^[As of 13 October 2021], and the impact on the global economy has been severe (@bank). Policymakers are in urgent need of evidence-based strategies to contain the pandemic. As @immun[p.583] reports, one critical mechanism through which epidemics are controlled is through herd immunity. Herd immunity is where a certain amount of the population is immune to a disease and can be achieved through a certain threshold of the population being vaccinated. 
+Coronavirus disease 2019 (COVID-19) has caused the largest public health crisis, and economic disaster of the 21st century so far [@bad p.471]. According to the @who, COVID-19 has directly resulted in 4,859,277 deaths worldwide^[As of 13 October 2021], and its impact on the global economy has been severe [@bank]. Policymakers are in urgent need of evidence-based strategies to contain the pandemic. As @immun[p.583] reports, one critical mechanism through which epidemics are controlled is through herd immunity. Herd immunity arises when a sufficiently large proportion of the population achieves individual immunity to an infectious disease such that the transmission chain of the disease is halted [@bad p.471]. One method of establishing herd immunity is through vaccination programs [@immun p.583]. Empirical evidence from @erad shows that infection detection and a vaccination strategy could be effective tools in subduing COVID-19 from Jakarta, Indonesia. Globally, the @who reports that a total of 6,364,021,792 vaccine doses have been administered as of 10 October 2021.
 
-The South African government has stated that it aims to have 67% of the population vaccinated by the end of 2021 (@herd). In spite of this, many South Africans are hesitant to get the COVID vaccine; @stat reports that only 25% of South Africa's adult population have been fully vaccinated^[Statistics reported as of 11 October 2021]. Governments around the world are devising strategies to contain the pandemic; one solution is to incentivise vaccinations. Here, insights from behaviourial economics could provide a cost-effective solution: a vaccine lottery. 
+Following the international example, South Africa has opted to issue vaccines in addition to social distancing and lockdown measures. The government has stated that it aims to have 67% of the population vaccinated by the end of 2021 (@herd). In spite of this, many South Africans are hesitant to get the COVID vaccine; @stat reports that only 25% of South Africa's adult population have been fully vaccinated^[Statistics reported as of 11 October 2021]. Governments around the world are devising strategies to contain the pandemic; one solution is to incentivise vaccinations. Here, insights from behaviourial economics could provide a cost-effective solution: a vaccine lottery. 
 
-This essay proposes a field experiment to investigate whether a vaccine lottery could improve vaccination rates in South Africa. The experiment explores the effect of three different lottery types - standard, regret and referral - on the take up of vaccines. This essay is structured as follows. Section \ref{lit} briefly reviews the relevant literature on behavioural economics and vaccine lotteries. Section \ref{cont} elaborates on the South African context. Section \ref{design} describes the design of the experiment and outlines the three types of treatment groups. Section \label{treat} discusses how the treatment will be administered and how the data will be collected.  Lastly, section \ref{pre} gives a pre-analysis plan of the empirical analysis that will be performed on the data, and the final section (\ref{con}) concludes. 
+This essay proposes a field experiment to investigate whether a vaccine lottery could improve vaccination rates in South Africa. The experiment explores the effect of three different lottery types - standard, regret and referral - on the take up of vaccines. This essay is structured as follows. Section \ref{lit} briefly reviews the relevant literature on behavioural economics and health incentives. Section \ref{context} elaborates on the South African context. Section \ref{design} describes the design of the experiment and outlines the three types of treatment groups. Section \label{treat} discusses how the treatment will be administered and how the data will be collected.  Lastly, section \ref{pre} gives a pre-analysis plan of the empirical analysis that will be performed on the data, and the final section (\ref{con}) concludes. 
 
 •	a clear statement of the research question and motivation for why this is interesting and important;
 •	a brief review of the relevant literature (both theoretical and empirical) which highlights the research gap your experiment will address;
@@ -153,7 +153,7 @@ gambling in SA
 
 This paper addresses the gap pf vaccine lotteries in SA.
 
-# The South African Context {context}
+# The South African Context \label{context}
 There are currently four vaccines which have been approved by the South African Health Products Regulatory Authority for use in South Africa: Johnson & Johnson (J&J), Pfizer, Sinovac and AstraZeneca. The two main vaccines being rolled out in South Africa are the J&J and Pfizer, which are both available for free. Vaccines are currently only available to individuals over the age of 18. The J&J vaccine only requires 1 dose; and the Pfizer vaccine requires two doses, 6 weeks apart. For the purposes of this field experiment, _fully vaccinated_ refers to an individual who has had either 1 J&J shot, or both shots of the Pfizer vaccine. _Vaccinated_ refers to an individual who has had 1 shot of either vaccine.
 
 According to @stat, 34% of South Africans are vaccinated, while only 25% are fully vaccinated. 
