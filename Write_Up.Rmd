@@ -11,13 +11,13 @@ documentclass: "elsarticle"
 # --------- Thesis title (Optional - set to FALSE by default).
 # You can move the details below around as you please.
 Thesis_FP: TRUE
-Entry1: "COVID-19 vaccine Lottery Field Experiment"
-Entry2: "\\textbf{Cassandra Pengelly}" # textbf for bold
-Entry3: "Behavioural Economics 871 Essay"
+Entry1: "COVID-19 Vaccine Lottery Field Experiment"
+Entry2: "\\textbf{Cassandra Pengelly | 20346212}" # textbf for bold
+Entry3: "Professor R. Burger"
 Uni_Logo: Tex/logo.png # Place a logo in the indicated location (from your root, e.g. defaults to ~/Tex/Logo.png) and uncomment this line. Leave uncommented for no image
 Logo_width: 0.9 # If using a logo - use this to set width (size) of image
-Entry4: "15 October 2021"
-# Entry5: "Stellenbosch University"
+Entry4: "Behavioural Economics 871 Essay"
+Entry5: "15 October 2021"
 # Entry6: April 2020
 # Entry7:
 # Entry8:
@@ -124,9 +124,16 @@ write_rds(Example_data, path = "data/Example_data.rds")
 
 # Introduction \label{Introduction}
 
-Coronavirus disease 2019 (COVID-19) has caused the largest public health crisis, and economic disaster of the 21st century so far [@bad p.471]. According to the @who, COVID-19 has directly resulted in 4,859,277 deaths worldwide^[As of 13 October 2021], and its impact on the global economy has been severe [@bank]. Policymakers are in urgent need of evidence-based strategies to contain the pandemic. As @immun[p.583] reports, one critical mechanism through which epidemics are controlled is through herd immunity. Herd immunity arises when a sufficiently large proportion of the population achieves individual immunity to an infectious disease such that the transmission chain of the disease is halted [@bad p.471]. One method of establishing herd immunity is through vaccination programs [@immun p.583]. Empirical evidence from @erad shows that infection detection and a vaccination strategy could be effective tools in subduing COVID-19 from Jakarta, Indonesia. Globally, the @who reports that a total of 6,364,021,792 vaccine doses have been administered as of 10 October 2021.
+Coronavirus disease 2019 (COVID-19) has caused the largest public health crisis, and economic disaster of the 21st century so far [@bad p.471]. According to the @who, COVID-19 has directly resulted in 4,859,277 deaths worldwide^[As of 13 October 2021], and its impact on the global economy has been severe [@bank]. Policymakers are in urgent need of evidence-based strategies to contain the pandemic. As @immun[p.583] reports, one critical mechanism through which epidemics are controlled is through herd immunity. Herd immunity arises when a sufficiently large proportion of the population achieves individual immunity to an infectious disease such that the transmission chain of the disease is halted [@bad p.471]. One method of establishing herd immunity is through vaccination programs [@immun p.583]. Preliminary empirical evidence shows that infection detection and vaccination strategies could be critical tools in subduing COVID-19, for example the study by @erad finds COVID-19 vaccines to be effective in Jakarta, Indonesia. Leaders of other countries have also implemented vaccine programs and the @who reports that a total of 6,364,021,792 vaccine doses have been administered globally as of 10 October 2021.
 
-Following the international example, South Africa has opted to issue vaccines in addition to social distancing and lockdown measures. The government has stated that it aims to have 67% of the population vaccinated by the end of 2021 (@herd). In spite of this, many South Africans are hesitant to get the COVID vaccine; @stat reports that only 25% of South Africa's adult population have been fully vaccinated^[Statistics reported as of 11 October 2021]. Governments around the world are devising strategies to contain the pandemic; one solution is to incentivise vaccinations. Here, insights from behaviourial economics could provide a cost-effective solution: a vaccine lottery. 
+In line with the international approach, South Africa has opted to issue vaccines in addition to social distancing and lockdown measures. The South African government has stated that it aims to have 67% of the population vaccinated by the end of 2021 [@herd]. However, many South Africans are hesitant to get the COVID vaccine; @stat records that only 25% of South Africa's adult population has been fully vaccinated as of 11 October 2021. @cram compiled a report, based on data from wave 5 of the NIDS-CRAM survey, and find that that around 20% of South Africans are concerned that COVID-19 vaccines are not safe. The report also shows that relatively few people in the sample registered to be vaccinated within two months after registration opened. @cram conclude that a significant portion of South Africans still have to be convinced to take the vaccine^[A sentiment report from @dep shows an interesting break down of different communities beliefs surrounding the vaccine]. While there are different ways to encourage vaccine 
+
+Here, insights from behaviourial economics could provide a cost-effective solution: a vaccine lottery. 
+
+
+
+
+
 
 This essay proposes a field experiment to investigate whether a vaccine lottery could improve vaccination rates in South Africa. The experiment explores the effect of three different lottery types - standard, regret and referral - on the take up of vaccines. This essay is structured as follows. Section \ref{lit} briefly reviews the relevant literature on behavioural economics and health incentives. Section \ref{context} elaborates on the South African context. Section \ref{design} describes the design of the experiment and outlines the three types of treatment groups. Section \label{treat} discusses how the treatment will be administered and how the data will be collected.  Lastly, section \ref{pre} gives a pre-analysis plan of the empirical analysis that will be performed on the data, and the final section (\ref{con}) concludes. 
 
@@ -143,17 +150,18 @@ amount of people have received the vaccine so far. Critical to reach herd immuni
 
 It is not unprecedented to use lotteries in public health interventions. To the best of my knowledge, this experiment would be the first randomized field experiment to assess the impact of lotteries on COVID-19 vaccine take-up in South Africa. Several papers show that regret lotteries can improve health outcomes, such as @regr and @adhere
 
-Loss aversion, regret avoidance, social preferences
+Loss aversion, regret avoidance, social preferences referral incentives
 
 Individuals have a tendency to overweight small probabilities and this overestimate their chances of winning a lottery.
 behavioural economics theory and 
 
 health incentive applications
-gambling in SA 
+
 
 This paper addresses the gap pf vaccine lotteries in SA.
 
 # The South African Context \label{context}
+
 There are currently four vaccines which have been approved by the South African Health Products Regulatory Authority for use in South Africa: Johnson & Johnson (J&J), Pfizer, Sinovac and AstraZeneca. The two main vaccines being rolled out in South Africa are the J&J and Pfizer, which are both available for free. Vaccines are currently only available to individuals over the age of 18. The J&J vaccine only requires 1 dose; and the Pfizer vaccine requires two doses, 6 weeks apart. For the purposes of this field experiment, _fully vaccinated_ refers to an individual who has had either 1 J&J shot, or both shots of the Pfizer vaccine. _Vaccinated_ refers to an individual who has had 1 shot of either vaccine.
 
 According to @stat, 34% of South Africans are vaccinated, while only 25% are fully vaccinated. 
@@ -178,11 +186,13 @@ table <- xtable(data, caption = "Vaccination Statistics \\label{tab1}")
 
 ```
 
+gambling in SA 
+
 # Experiment Design \label{design}
 
 The field experiment is designed to address the research question: could a vaccine lottery improve vaccination rates in South Africa? 
 
-The sample used will be the same sample used for the Coronavirus Rapid Mobile Survey (NIDS-CRAM). NIDS-CRAM was created in response to the pandemic as a way to build a representative data set of the South African population to inform decision-making (@nids). Thus far, there have been five waves of NIDS-CRAM surveys, with wave 5 comprising a sample of 5,862 people being surveyed during 6 April to 11 May 2021 (@nids p.14). Wave 3 consisted of a total of 8,157 potential participants, of which 6,130 were successfully interviewed. For the purposes of this field experiment, the 8,157 people from Wave 3 will be contacted and asked to participate in the experiment. It seems reasonable to expect between 5,500 and 6,200 people to participate, given the previous rates of attrition experienced in NIDS-CRAM. 
+The sample used will be the same sample used for the Coronavirus Rapid Mobile Survey (NIDS-CRAM). NIDS-CRAM was created in response to the pandemic as a way to build a representative data set of the South African population to inform decision-making [@nids]. Thus far, there have been five waves of NIDS-CRAM surveys, with wave 5 comprising a sample of 5,862 people being surveyed during 6 April to 11 May 2021 (@nids p.14). Wave 3 consisted of a total of 8,157 potential participants, of which 6,130 were successfully interviewed. For the purposes of this field experiment, the 8,157 people from Wave 3 will be contacted and asked to participate in the experiment. It seems reasonable to expect between 5,500 and 6,200 people to participate, given the previous rates of attrition experienced in NIDS-CRAM. 
 
 The NIDS-CRAM sample will then be split into 4 groups of equal size. Assuming a conservative sample size of 5,500, each of the 4 groups will comprise 1,375 individuals. @random which will be randomised using the randomisation technique as proposed by @. The first group is the control group, where individuals will not be entered into any vaccine lottery. The other 3 groups are will receive different lottery treatments, which are explained below. There will be 3 monthly lotteries for each treatment group, which will run simultaneously. Thus, in total there will be 9 lotteries for this field experiment, with 3 lotteries every month. Each lottery will award a cash prize of R1,000,000. 
 
@@ -272,9 +282,6 @@ This field experiment would be in collaboration with the South African governmen
 
 Data Collection
 There is a data collection system already set up at the vaccination sites so this extra data point would not be difficult to collect within the current tracking system. Depending on costs, the referral friend could be sent an sms thanking her for caring about others and getting them vaccinated, and letting her know that she has been entered into the draw. This is a positive reinforcement technique and shows people that the government is following up on their promise. This acknowledgement and transparency is expected to encourage more referrals. Once the lucky draw has been concluded, the data can be analysed, the purpose of which is to uncover whether the nudge increased vaccinations. 
-
-
-References are to be made as follows: @fama1997[p. 33]  Such authors could also be referenced in brackets [@grinold2000] and together [@fama1997 \& @grinold2000]. 
 
 > I suggest renaming the top line after \@article, as done in the template ref.bib file, to something more intuiti
 

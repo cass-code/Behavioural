@@ -242,13 +242,13 @@ $if(Uni_Logo)$
 $endif$
 %Supervisor's Details
 \begin{center}
-    {\Large $Entry3$\par}
+    {\LARGE $Entry3$\par}
     \vspace{1cm}
 %Degree
-    {\large $Entry4$\par}
+    {\LARGE $Entry4$\par}
     \vspace{1cm}
 %Institution
-    {\large $Entry5$\par}
+    {\LARGE $Entry5$\par}
     \vspace{1cm}
 %Date
     {\large $Entry6$}

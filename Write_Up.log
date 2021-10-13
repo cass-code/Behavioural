@@ -1,22 +1,22 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.9.21)  13 OCT 2021 14:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.13)  13 OCT 2021 18:05
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
 **Write_Up.tex
 (./Write_Up.tex
 LaTeX2e <2021-06-01> patch level 1
-L3 programming layer <2021-08-27>
+L3 programming layer <2021-10-12>
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/elsarticle/els
 article.cls
 Document Class: elsarticle 2020/11/20, 3.3: Elsevier Ltd
 
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3kernel/expl3
 .sty
-Package: expl3 2021-08-27 L3 programming layer (loader) 
+Package: expl3 2021-10-12 L3 programming layer (loader) 
 
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/l3backend/l3ba
 ckend-pdftex.def
-File: l3backend-pdftex.def 2021-08-04 L3 backend support: PDF output (pdfTeX)
+File: l3backend-pdftex.def 2021-10-12 L3 backend support: PDF output (pdfTeX)
 \l__color_backend_stack_int=\count182
 \l__pdf_internal_box=\box50
 ))
@@ -820,31 +820,31 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <9> on input line 261.
 LaTeX Font Info:    External font `lmex10' loaded for size
 (Font)              <5> on input line 261.
+[3]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-10.
+24.
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [3] [4] [5]
-Overfull \hbox (35.0871pt too wide) in paragraph at lines 484--494
+) [4] [5] [6]
+Overfull \hbox (35.0871pt too wide) in paragraph at lines 499--509
  [][] 
  []
 
-[6] [7] [8]
-<Write_Up_files/figure-latex/Figure1-1.png, id=173, 433.62pt x 216.81pt>
+[7] [8]
+<Write_Up_files/figure-latex/Figure1-1.png, id=180, 433.62pt x 216.81pt>
 File: Write_Up_files/figure-latex/Figure1-1.png Graphic file (type png)
 <use Write_Up_files/figure-latex/Figure1-1.png>
 Package pdftex.def Info: Write_Up_files/figure-latex/Figure1-1.png  used on inp
-ut line 612.
+ut line 621.
 (pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
-[9 <./Write_Up_files/figure-latex/Figure1-1.png>] [10]
-Underfull \hbox (badness 10000) in paragraph at lines 749--753
+[9 <./Write_Up_files/figure-latex/Figure1-1.png>] [10] [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 769--773
 \T1/lmr/m/it/10.95 world\T1/lmr/m/n/10.95 . [On-line], Avail-able: [][]$https :
  / / www . worldbank . org / en / news / feature / 2020 / 06 / 08 /
  []
 
-[11]
 No file Write_Up.bbl.
-[12] (./Write_Up.aux)
+[13] (./Write_Up.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -852,36 +852,30 @@ Package rerunfilecheck Info: File `Write_Up.out' has not changed.
 (rerunfilecheck)             Checksum: 479501E6DF3BF2D24AD569809CCD2728;1494.
  ) 
 Here is how much of TeX's memory you used:
- 15281 strings out of 480559
- 270471 string characters out of 5901444
- 572769 words of memory out of 5000000
+ 15282 strings out of 480559
+ 270466 string characters out of 5901443
+ 575778 words of memory out of 5000000
  32587 multiletter control sequences out of 15000+600000
  462878 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 72i,12n,80p,321b,905s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{ref-grinold2000} has been referenced but does not
- exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{ref-fama1997} has been referenced but does not exis
-t, replaced by a fixed one
-
-{c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-ec
-.enc}{c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/
-lm-ts1.enc}<c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/p
-ublic/lm/lmbx10.pfb><c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/font
-s/type1/public/lm/lmbx12.pfb><c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-
-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/Cassandra/AppData/Roaming/TinyTe
-X/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/Cassandra/AppData/Roamin
-g/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Cassandra/AppDat
-a/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/Cassandra
-/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/Ca
-ssandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:/U
-sers/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri10.
-pfb>
-Output written on Write_Up.pdf (12 pages, 868200 bytes).
+ 72i,12n,80p,321b,893s stack positions out of 5000i,500n,10000p,200000b,80000s
+{c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/lm/lm-
+ec.enc}{c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/enc/dvips/l
+m/lm-ts1.enc}<c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1
+/public/lm/lmbx10.pfb><c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fo
+nts/type1/public/lm/lmbx12.pfb><c:/Users/Cassandra/AppData/Roaming/TinyTeX/texm
+f-dist/fonts/type1/public/lm/lmr10.pfb><c:/Users/Cassandra/AppData/Roaming/Tiny
+TeX/texmf-dist/fonts/type1/public/lm/lmr12.pfb><c:/Users/Cassandra/AppData/Roam
+ing/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr17.pfb><c:/Users/Cassandra/AppD
+ata/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr6.pfb><c:/Users/Cassand
+ra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/
+Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:
+/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri1
+0.pfb>
+Output written on Write_Up.pdf (13 pages, 876345 bytes).
 PDF statistics:
- 275 PDF objects out of 1000 (max. 8388607)
- 235 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 287 PDF objects out of 1000 (max. 8388607)
+ 246 compressed objects within 3 object streams
+ 60 named destinations out of 1000 (max. 500000)
  99 words of extra memory for PDF output out of 10000 (max. 10000000)
 
