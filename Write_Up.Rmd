@@ -122,33 +122,29 @@ write_rds(Example_data, path = "data/Example_data.rds")
 <!-- ############################## -->
 \newpage
 
-# Introduction \label{Introduction}
+# Introduction \label{Introduction} 492
 
-Coronavirus disease 2019 (COVID-19) has caused the largest public health crisis, and economic disaster of the 21st century so far [@bad p.471]. According to the @who, COVID-19 has directly resulted in 4,859,277 deaths worldwide^[As of 13 October 2021], and its impact on the global economy has been severe [@bank]. Policymakers are in urgent need of evidence-based strategies to contain the pandemic. As @immun[p.583] reports, one critical mechanism through which epidemics are controlled is through herd immunity. Herd immunity arises when a sufficiently large proportion of the population achieves individual immunity to an infectious disease such that the transmission chain of the disease is halted [@bad p.471]. One method of establishing herd immunity is through vaccination programs [@immun p.583]. Preliminary empirical evidence shows that infection detection and vaccination strategies could be critical tools in subduing COVID-19, for example the study by @erad finds COVID-19 vaccines to be effective in Jakarta, Indonesia. Leaders of other countries have also implemented vaccine programs and the @who reports that a total of 6,364,021,792 vaccine doses have been administered globally as of 10 October 2021.
+Coronavirus disease 2019 (COVID-19) has caused the largest public health crisis, and economic disaster of the 21st century so far [@bad p.471]. According to the @who, COVID-19 has directly resulted in 4,859,277 deaths worldwide^[As of 13 October 2021], and its impact on the global economy has been severe [@bank]. Policymakers are in urgent need of evidence-based strategies to contain the pandemic. As @immun[p.583] report, one critical mechanism through which epidemics are controlled is through herd immunity. Herd immunity arises when a sufficiently large proportion of the population achieves individual immunity to an infectious disease such that the transmission chain of the disease is halted [@bad p.471]. One method of establishing herd immunity is through vaccination programs [@immun p.583]. Preliminary empirical evidence shows that infection detection and vaccination strategies could be critical tools in subduing COVID-19, for example the study by @erad finds COVID-19 vaccines to be effective in Jakarta, Indonesia. Leaders of other countries have also implemented vaccine programs and the @who reports that a total of 6,364,021,792 vaccine doses have been administered globally as of 10 October 2021.
 
-In line with the international approach, South Africa has opted to issue vaccines in addition to social distancing and lockdown measures. The South African government has stated that it aims to have 67% of the population vaccinated by the end of 2021 [@herd]. However, many South Africans are hesitant to get the COVID vaccine; @stat records that only 25% of South Africa's adult population has been fully vaccinated as of 11 October 2021. @cram compiled a report, based on data from wave 5 of the NIDS-CRAM survey, and find that that around 20% of South Africans are concerned that COVID-19 vaccines are not safe. The report also shows that relatively few people in the sample registered to be vaccinated within two months after registration opened. @cram conclude that a significant portion of South Africans still have to be convinced to take the vaccine^[A sentiment report from @dep shows an interesting break down of different communities beliefs surrounding the vaccine]. While there are different ways to encourage vaccine 
-
-Here, insights from behaviourial economics could provide a cost-effective solution: a vaccine lottery. 
-
-
-
-
-
+In line with the international approach, South Africa has opted to issue vaccines in addition to social distancing and lockdown measures. The South African government has stated that it aims to have 67% of the population vaccinated by the end of 2021 [@herd]. However, many South Africans are hesitant to get the COVID vaccine; @stat records that only 25% of South Africa's adult population has been fully vaccinated as of 11 October 2021. @cram compiled a report, based on data from wave 5 of the NIDS-CRAM survey, and find that that around 20% of South Africans are concerned that COVID-19 vaccines are not safe. The report also shows that relatively few people in the sample registered to be vaccinated within two months after registration opened. @cram conclude that a significant portion of South Africans still have to be convinced to take the vaccine^[A sentiment report from @dep shows an interesting break down of different communities beliefs surrounding the vaccine]. While there are different ways to encourage vaccine uptake, such as mandatory vaccination or lump-sum transfers, insights from behaviourial economics could provide a more cost-effective solution: a vaccine lottery. 
 
 This essay proposes a field experiment to investigate whether a vaccine lottery could improve vaccination rates in South Africa. The experiment explores the effect of three different lottery types - standard, regret and referral - on the take up of vaccines. This essay is structured as follows. Section \ref{lit} briefly reviews the relevant literature on behavioural economics and health incentives. Section \ref{context} elaborates on the South African context. Section \ref{design} describes the design of the experiment and outlines the three types of treatment groups. Section \label{treat} discusses how the treatment will be administered and how the data will be collected.  Lastly, section \ref{pre} gives a pre-analysis plan of the empirical analysis that will be performed on the data, and the final section (\ref{con}) concludes. 
 
 •	a clear statement of the research question and motivation for why this is interesting and important;
-•	a brief review of the relevant literature (both theoretical and empirical) which highlights the research gap your experiment will address;
-
-•	a clear description of the experimental design and the theory of change;
-•	an explanation of how the treatments will be administered and data gathered (including proposed partner institutions);
-•	a pre-analysis plan of the empirical analysis that will be performed on the data.
-
-amount of people have received the vaccine so far. Critical to reach herd immunity is improving vaccination rates. 
 
 # Behavioural Economics and Health Incentives  \label{lit} 
 
+
+Health professionals and policymakers are increasingly turning to behavioural economics to understand how people make health decisions and how these insights can be used to improve public health [@health p.1]. 
+
+A lottery system can be a cost-effective mechanism for changing behaviour compared to direct transfers because people tend to overweight small probabilities. Due to this nonlinear probability weighting, an individual overestimate her chances of winning a lottery. 
+
+Vaccine lotteries build on past research and core insights from behavioral economics. Past experiments -- albeit with far smaller rewards and populations -- indicate lottery incentives can effectively change other types of health decisions (6-8). Lotteries can be more cost-effective than direct payments because individuals tend to overweight small probabilities (9-11), which leads them to overvalue their long odds of winning a lottery (
+
+
+
 It is not unprecedented to use lotteries in public health interventions. To the best of my knowledge, this experiment would be the first randomized field experiment to assess the impact of lotteries on COVID-19 vaccine take-up in South Africa. Several papers show that regret lotteries can improve health outcomes, such as @regr and @adhere
+
 
 Loss aversion, regret avoidance, social preferences referral incentives
 
@@ -157,6 +153,7 @@ behavioural economics theory and
 
 health incentive applications
 
+research gap your experiment will address;
 
 This paper addresses the gap pf vaccine lotteries in SA.
 
@@ -189,6 +186,8 @@ table <- xtable(data, caption = "Vaccination Statistics \\label{tab1}")
 gambling in SA 
 
 # Experiment Design \label{design}
+
+•	a clear description of the experimental design and the theory of change;
 
 The field experiment is designed to address the research question: could a vaccine lottery improve vaccination rates in South Africa? 
 
@@ -251,6 +250,8 @@ Probles with vaccine studies: too few participants. A larger study could fill th
 
 # Treatment and Data \label{treat}
 
+•	an explanation of how the treatments will be administered and data gathered (including proposed partner institutions);
+
 The CRAM survey exists to provide monthly nationally-representative data on key outcomes such as unemployment, household income, child hunger and access to government grants.
 
 
@@ -261,14 +262,8 @@ add 3 questions to NIDS data cram
 
 # Pre-analysis plan \label{pre}
 
-Students must submit an essay in which they design a field experiment that could answer an interesting behavioural economic question. The essay must contain the following:
-
-•	a clear statement of the research question and motivation for why this is interesting and important;
-•	a brief review of the relevant literature (both theoretical and empirical) which highlights the research gap your experiment will address;
-
-•	a clear description of the experimental design and the theory of change;
-•	an explanation of how the treatments will be administered and data gathered (including proposed partner institutions);
 •	a pre-analysis plan of the empirical analysis that will be performed on the data.
+
 
 Overview
 In this field experiment, a person who refers his/her friend to receive a vaccine would be entered into a lucky draw, with a monetary prize, created by the government. The purpose behind this nudge is to encourage people who would otherwise not have got a Covid vaccine, to do so. The hypothesis is that there should be an increase in the total number of people receiving a Covid vaccine after the nudge is implemented. Increasing the number of vaccinations is important as medical research shows that vaccines decrease the probability of contracting Covid-19 and are also effective at reducing the severity of the symptoms of the virus for those who do contract it. 
