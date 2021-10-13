@@ -135,20 +135,6 @@
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 
 %%% Include extra packages specified by user
-\usepackage{array}
-\usepackage{caption}
-\usepackage{graphicx}
-\usepackage{siunitx}
-\usepackage[normalem]{ulem}
-\usepackage{colortbl}
-\usepackage{multirow}
-\usepackage{hhline}
-\usepackage{calc}
-\usepackage{tabularx}
-\usepackage{threeparttable}
-\usepackage{wrapfig}
-\usepackage{adjustbox}
-\usepackage{hyperref}
 
 %%% Hard setting column skips for reports - this ensures greater consistency and control over the length settings in the document.
 %% page layout
@@ -263,12 +249,26 @@
 \section{\texorpdfstring{Introduction
 \label{Introduction}}{Introduction }}\label{introduction}}
 
-One critical mechanism through which epidemics are contained is through
-herd immunity. Herd immunity is where a certain amount of the population
-is immune to a disease and can be achieved through a certain threshold
-of the population being vaccinated. The South African government has
-stated that it aims to have 67\% of the population vaccinated by the end
-of 2021 (\protect\hyperlink{ref-herd}{RSA}
+Coronavirus disease 2019 (COVID-19) has caused the largest public health
+crisis, and economic disaster of the 21st century so far
+(\protect\hyperlink{ref-bad}{Kadkhoda}
+(\protect\hyperlink{ref-bad}{2021}) p.471). According to the
+\protect\hyperlink{ref-who}{World Health Organisation}
+(\protect\hyperlink{ref-who}{2021}), COVID-19 has directly resulted in
+4,859,277 deaths worldwide\footnote{As of 13 October 2021}, and the
+impact on the global economy has been severe
+(\protect\hyperlink{ref-bank}{World Bank}
+(\protect\hyperlink{ref-bank}{2020})). Policymakers are in urgent need
+of evidence-based strategies to contain the pandemic. One critical
+mechanism through which epidemics are controlled is through herd
+immunity (\protect\hyperlink{ref-immun}{Fontanet \& Cauchemez}
+(\protect\hyperlink{ref-immun}{2020})). Herd immunity is where a certain
+amount of the population is immune to a disease and can be achieved
+through a certain threshold of the population being vaccinated.
+
+The South African government has stated that it aims to have 67\% of the
+population vaccinated by the end of 2021
+(\protect\hyperlink{ref-herd}{RSA}
 (\protect\hyperlink{ref-herd}{2021a})). In spite of this, many South
 Africans are hesitant to get the COVID vaccine;
 \protect\hyperlink{ref-stat}{RSA} (\protect\hyperlink{ref-stat}{2021b})
@@ -280,10 +280,13 @@ from behaviourial economics could provide a cost-effective solution: a
 vaccine lottery.
 
 This essay proposes a field experiment to investigate whether a vaccine
-lottery could improve vaccination rates in South Africa. Section
-\ref{lit} briefly reviews the relevant literature on behavioural
-economics and vaccine lotteries. Section \ref{design} describes the
-design of the experiment and outlines the three types of treatment
+lottery could improve vaccination rates in South Africa. The experiment
+explores the effect of three different lottery types - standard, regret
+and referral - on the take up of vaccines. This essay is structured as
+follows. Section \ref{lit} briefly reviews the relevant literature on
+behavioural economics and vaccine lotteries. Section \ref{cont}
+elaborates on the South African context. Section \ref{design} describes
+the design of the experiment and outlines the three types of treatment
 groups. Section \label{treat} discusses how the treatment will be
 administered and how the data will be collected. Lastly, section
 \ref{pre} gives a pre-analysis plan of the empirical analysis that will
@@ -307,13 +310,29 @@ herd immunity is improving vaccination rates.
 \section{\texorpdfstring{Behavioural Economics and Health Incentives
 \label{lit}}{Behavioural Economics and Health Incentives }}\label{behavioural-economics-and-health-incentives}}
 
-behavioural economics theory and health incentive applications gambling
-in SA
+It is not unprecedented to use lotteries in public health interventions.
+To the best of my knowledge, this experiment would be the first
+randomized field experiment to assess the impact of lotteries on
+COVID-19 vaccine take-up in South Africa. Several papers show that
+regret lotteries can improve health outcomes, such as
+\protect\hyperlink{ref-regr}{Husain, Diaz, Schwartz, Parsons, Burg,
+Davidson \& Kronish} (\protect\hyperlink{ref-regr}{2019}) and
+\protect\hyperlink{ref-adhere}{Humphrey, Small, Jensen, Volpp, Asch, Zhu
+\& Troxel} (\protect\hyperlink{ref-adhere}{2019})
+
+Loss aversion, regret avoidance, social preferences
+
+Individuals have a tendency to overweight small probabilities and this
+overestimate their chances of winning a lottery. behavioural economics
+theory and
+
+health incentive applications gambling in SA
 
 This paper addresses the gap pf vaccine lotteries in SA.
 
-\hypertarget{the-south-african-context}{%
-\section{The South African Context}\label{the-south-african-context}}
+\hypertarget{the-south-african-context-context}{%
+\section{The South African Context
+\{context\}}\label{the-south-african-context-context}}
 
 There are currently four vaccines which have been approved by the South
 African Health Products Regulatory Authority for use in South Africa:
@@ -356,38 +375,92 @@ Eastern Cape & 1 603 045 & 4 099 543 & 39\% \\
 \section{\texorpdfstring{Experiment Design
 \label{design}}{Experiment Design }}\label{experiment-design}}
 
-The field experiment is designed Research question: could a vaccine
-lottery improve vaccination rates in South Africa?
+The field experiment is designed to address the research question: could
+a vaccine lottery improve vaccination rates in South Africa?
 
-The sample used will be the same as for NIDS CRAM. Nationally
-representative, other data included, only pay for marginal cost of
-including extra questions
+The sample used will be the same sample used for the Coronavirus Rapid
+Mobile Survey (NIDS-CRAM). NIDS-CRAM was created in response to the
+pandemic as a way to build a representative data set of the South
+African population to inform decision-making
+(\protect\hyperlink{ref-nids}{Ingle}
+(\protect\hyperlink{ref-nids}{2021})). Thus far, there have been five
+waves of NIDS-CRAM surveys, with wave 5 comprising a sample of 5,862
+people being surveyed during 6 April to 11 May 2021
+(\protect\hyperlink{ref-nids}{Ingle}
+(\protect\hyperlink{ref-nids}{2021}) p.14). Wave 3 consisted of a total
+of 8,157 potential participants, of which 6,130 were successfully
+interviewed. For the purposes of this field experiment, the 8,157 people
+from Wave 3 will be contacted and asked to participate in the
+experiment. It seems reasonable to expect between 5,500 and 6,200 people
+to participate, given the previous rates of attrition experienced in
+NIDS-CRAM.
 
-The NIDS CRAM sample will be split into 4 random groups, which will be
-randomised using the randomisation technique as proposed by @.
+The NIDS-CRAM sample will then be split into 4 groups of equal size.
+Assuming a conservative sample size of 5,500, each of the 4 groups will
+comprise 1,375 individuals. \protect\hyperlink{ref-random}{Duflo,
+Glennerster \& Kremer} (\protect\hyperlink{ref-random}{2007}) which will
+be randomised using the randomisation technique as proposed by @. The
+first group is the control group, where individuals will not be entered
+into any vaccine lottery. The other 3 groups are will receive different
+lottery treatments, which are explained below. There will be 3 monthly
+lotteries for each treatment group, which will run simultaneously. Thus,
+in total there will be 9 lotteries for this field experiment, with 3
+lotteries every month. Each lottery will award a cash prize of
+R1,000,000.
 
-The first group is the control group, where individuals will not be
-entered into any vaccine lottery. The other 3 groups are will receive
-different lottery treatments. There will be 3 monthly lotteries for each
-treatment group, which will run simultaneously. Thus, in total there
-will be 9 lotteries for this field experiment, with 3 lotteries every
-month. For the first treatment group, if an individual has received a
+NIDS-CRAM is a special follow-up survey of a subsample of adults from
+households that were part of the last wave (2017) of the National Income
+Dynamics Study (NIDS). NIDS was a large-scale longitudinal survey, run
+by the Southern Africa Labour and Development Research Unit (SALDRU),
+that tracked the social and economic well-being of South Africans from
+2008 up to 2017. SALDRU (based at the University of Cape Town) was
+responsible for the NIDS-CRAM survey data collection, quality assurance
+and production. The NIDS-CRAM survey instrument includes a wide range of
+questions on income and employment, sociodemographic characteristics,
+and household welfare. This paper draws on questions about vaccine
+acceptance that were included in Waves 4 and 5 of the NIDS-CRAM survey.
+Wave 4 was conducted from 2 February to 10 March 2021 with a sample of
+4,792 individuals, and Wave 5 was conducted from 6 April to 11 May 2021
+with a sample of 4,996. Compared to NIDS-CRAM Wave 1 (May and June
+2020), Wave 4 had 31\% attrition and Wave 5 had 28\% attrition.
+
+For the first treatment group, if an individual has received a
 vaccination shot\footnote{An individual only need a receive one shot of
   any vaccine - receiving the first shot of the Pfizer qualifies an
   individual for that month's lottery} within a given month, she will be
-entered into that months's vaccine lottery. At the end of the month, a
-name is randomly selected from the lottery and receives a cash prize.
-Once it is verifed that the winner has been vaccinated, she will be
-privately contacted. It will be announced via sms to the entire sample
-that the lottery has been won, the amount of the lottery prize and the
-winner's province. The amounth province
+entered into that month's vaccine lottery. At the end of the month, a
+winner is randomly selected from the lottery pool. Once it is verifed
+that the winner has been vaccinated, she will be privately contacted and
+will receive a cash prize. It will then be announced via sms to everyone
+in the treatment group (group 1) that the lottery has been won, the
+amount of the lottery prize, and the winner's province.
 
 Following the approach of \protect\hyperlink{ref-regret}{Gandhi,
 Milkman, Ellis, Graci, Gromet, Mobarak, Buttenheim, Duckworth, Pope,
 Stanford, Thaler \& Volpp} (\protect\hyperlink{ref-regret}{2021}), the
-second lottery is a regret lottery. Every individual is entered into the
-lottery but an individual is eligible to win the lottery only if they
-have been vaccinated (had at least 1 shot of either vaccine).
+second lottery is a ``regret lottery''. Every individual in the sample
+is entered into a monthly lottery but an individual may only claim her
+prize if she has been vaccinated (i.e.~had at least 1 shot of any
+vaccine). At month end, a winner is randomly drawn from the lottery
+pool. If the winner has been vaccinated, she will be privately notified
+and will receive a cash prize. It will then be announced via sms to
+everyone in the treatment group (group 3) that the lottery has been won,
+the amount of the cash prize, the winner's province and a reminder that
+only vaccinated individuals are eligible to win the lottery.
+
+The final treatment is a ``referral lottery''. An individual is entered
+into the monthly lottery if 2 conditions are met: he is vaccinated, and
+he refers a friend to get vaccinated and the friend gets vaccinated.
+Both the individual from the sample and his friend are entered into the
+lottery. At the end of the month, a winner is selected, verified to be
+vaccinated and privately informed. An SMS is sent out to the treatment
+group with the same information as for group 2 and group 3, in addition
+to a message thanking the sample for protecting their friends as well as
+a reminder that they can refer more friends to be eligible for the
+following month's lottery.
+
+Including an SMS after the lottery has won serves as a reminder that
+there is a
 
 Table \ref{tab2} summarises the different treatments administered.
 
@@ -399,19 +472,12 @@ Group & Treatment \\
   \midrule
 Control & No lottery \\ 
   Group 1 & Individual is entered into a lottery once they are vaccinated \\ 
-  Group 2 & Everyone is entered into a lottery and they are elgible to win if vaccinated \\ 
-  Group 3 & Individual is entered if they referred a friend to get vaccinated and friend gets vaccinated \\ 
+  Group 2 & Everyone in the group is entered into a lottery; only vaccinated individuals can claim the prize \\ 
+  Group 3 & Individual is entered if she is vaccinated and refers a friend, who gets vaccinated \\ 
    \bottomrule
 \end{tabular}
 \caption{Treatment Summary \label{tab2}} 
 \end{table}
-
-Have 1 control group: no messages, no lotto Have 4 treatment groups: •
-Send messages • 1 lottery where you are entered if you got at least 1
-vaccination • 1 lottery where a friend has to refer you • 1 regret
-lottery: everyone is entered into the lotto (receive sms) and can only
-win if vaccinated Can randomize across municipalities or provinces size
-of sample population for experiment
 
 Many South Africans are hesitant to get the COVID vaccine. As STATSA
 shows, amount of people have received the vaccine so far. Critical to
@@ -421,17 +487,23 @@ vaccination lottery is proposed. While some governments have considered
 and experimented with lump-sum payments, behavioural economics could
 provide a more cost-effective solution. Individuals have a tendency to
 overweight small probabilities and this overestimate their chances of
-winning a lottery. In South Africa, Lit Review Theory: overweight small
-probabilities, gambling, social preferences, regret avoidance Empirical:
-vaccine field designs, lottery incentives, regret lottery incentives
-Several authors have experimented with lotteries as an incentive for
-vaccinations, although there have been no studies as of yet on the South
-African population. Probles with vaccine studies: too few participants.
-A larger study could fill this gap in the literature.
+winning a lottery. In South Africa,
+
+Theory: overweight small probabilities, gambling, social preferences,
+regret avoidance Empirical: vaccine field designs, lottery incentives,
+regret lottery incentives Several authors have experimented with
+lotteries as an incentive for vaccinations, although there have been no
+studies as of yet on the South African population. Probles with vaccine
+studies: too few participants. A larger study could fill this gap in the
+literature.
 
 \hypertarget{treatment-and-data}{%
 \section{\texorpdfstring{Treatment and Data
 \label{treat}}{Treatment and Data }}\label{treatment-and-data}}
+
+The CRAM survey exists to provide monthly nationally-representative data
+on key outcomes such as unemployment, household income, child hunger and
+access to government grants.
 
 Partner with NIDS, department of health, vaccine administer, funding
 data collected at vaccine add 3 questions to NIDS data cram
@@ -527,10 +599,7 @@ self-adjust in your paper.
 
 \begin{quote}
 I suggest renaming the top line after @article, as done in the template
-ref.bib file, to something more intuitive for you to remember. Do not
-change the rest of the code. Also, be mindful of the fact that bib
-references from google scholar may at times be incorrect. Reference
-Latex forums for correct bibtex notation.
+ref.bib file, to something more intuiti
 \end{quote}
 
 \begin{figure}[H]
@@ -595,140 +664,6 @@ mpg & cyl & disp & hp & drat & wt & qsec & vs & am & gear & carb \\
 
 \hfill
 
- 
-  \providecommand{\huxb}[2]{\arrayrulecolor[RGB]{#1}\global\arrayrulewidth=#2pt}
-  \providecommand{\huxvb}[2]{\color[RGB]{#1}\vrule width #2pt}
-  \providecommand{\huxtpad}[1]{\rule{0pt}{#1}}
-  \providecommand{\huxbpad}[1]{\rule[-#1]{0pt}{#1}}
-
-\begin{table}[ht]
-\begin{centerbox}
-\begin{threeparttable}
-\captionsetup{justification=centering,singlelinecheck=off}
-\caption{Regression Output}
- \label{Reg01}
-\setlength{\tabcolsep}{0pt}
-\begin{tabular}{l l l l}
-
-
-\hhline{>{\huxb{0, 0, 0}{0.8}}->{\huxb{0, 0, 0}{0.8}}->{\huxb{0, 0, 0}{0.8}}->{\huxb{0, 0, 0}{0.8}}-}
-\arrayrulecolor{black}
-
-\multicolumn{1}{!{\huxvb{0, 0, 0}{0}}c!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\centering \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont } \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{c!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\centering \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont Reg1} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{c!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\centering \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont Reg2} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{c!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\centering \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont Reg3} \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
-
-
-\hhline{>{\huxb{255, 255, 255}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}-}
-\arrayrulecolor{black}
-
-\multicolumn{1}{!{\huxvb{0, 0, 0}{0}}l!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont (Intercept)} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont -2256.361 ***} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont 5763.668 ***} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont 4045.333 ***} \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
-
-
-\hhline{}
-\arrayrulecolor{black}
-
-\multicolumn{1}{!{\huxvb{0, 0, 0}{0}}l!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont } \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont (13.055)\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont (740.556)\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont (286.205)\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
-
-
-\hhline{}
-\arrayrulecolor{black}
-
-\multicolumn{1}{!{\huxvb{0, 0, 0}{0}}l!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont carat} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont 7756.426 ***} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont \hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont 7765.141 ***} \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
-
-
-\hhline{}
-\arrayrulecolor{black}
-
-\multicolumn{1}{!{\huxvb{0, 0, 0}{0}}l!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont } \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont (14.067)\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont \hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont (14.009)\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
-
-
-\hhline{}
-\arrayrulecolor{black}
-
-\multicolumn{1}{!{\huxvb{0, 0, 0}{0}}l!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont depth} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont \hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont -29.650 *\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont -102.165 ***} \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
-
-
-\hhline{}
-\arrayrulecolor{black}
-
-\multicolumn{1}{!{\huxvb{0, 0, 0}{0}}l!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont } \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont \hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont (11.990)\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont (4.635)\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
-
-
-\hhline{>{\huxb{255, 255, 255}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}->{\huxb{0, 0, 0}{0.4}}-}
-\arrayrulecolor{black}
-
-\multicolumn{1}{!{\huxvb{0, 0, 0}{0}}l!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont N} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont 53940\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont 53940\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont 53940\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
-
-
-\hhline{}
-\arrayrulecolor{black}
-
-\multicolumn{1}{!{\huxvb{0, 0, 0}{0}}l!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont R2} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont 0.849\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont 0.000\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} &
-\multicolumn{1}{r!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedleft \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont 0.851\hphantom{0}\hphantom{0}\hphantom{0}\hphantom{0}} \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
-
-
-\hhline{>{\huxb{0, 0, 0}{0.8}}->{\huxb{0, 0, 0}{0.8}}->{\huxb{0, 0, 0}{0.8}}->{\huxb{0, 0, 0}{0.8}}-}
-\arrayrulecolor{black}
-
-\multicolumn{4}{!{\huxvb{0, 0, 0}{0}}l!{\huxvb{0, 0, 0}{0}}}{\huxtpad{6pt + 1em}\raggedright \hspace{6pt} {\fontsize{12pt}{14.4pt}\selectfont  *** p $<$ 0.001;  ** p $<$ 0.01;  * p $<$ 0.05.} \hspace{6pt}\huxbpad{6pt}} \tabularnewline[-0.5pt]
-
-
-\hhline{}
-\arrayrulecolor{black}
-\end{tabular}
-\end{threeparttable}\par\end{centerbox}
-
-\end{table}
- 
-
-FYI - R also recently introduced the gt package, which is worthwhile
-exploring too.
-
-\hypertarget{lists}{%
-\section{Lists}\label{lists}}
-
-To add lists, simply using the following notation
-
-\begin{itemize}
-\item
-  This is really simple
-
-  \begin{itemize}
-  \tightlist
-  \item
-    Just note the spaces here - writing in R you have to sometimes be
-    pedantic about spaces\ldots{}
-  \end{itemize}
-\item
-  Note that Rmarkdown notation removes the pain of defining
-  \LaTeX environments!
-\end{itemize}
-
 \hypertarget{conclusion}{%
 \section{\texorpdfstring{Conclusion
 \label{con}}{Conclusion }}\label{conclusion}}
@@ -749,9 +684,18 @@ in your bibtex file will not be included in References).
 
 \hypertarget{refs}{}
 \begin{CSLReferences}{1}{0}
+\leavevmode\hypertarget{ref-random}{}%
+Duflo, E., Glennerster, R. \& Kremer, M. 2007. Using randomization in
+development economics research: A toolkit. \emph{Handbook of development
+economics}. 4:3895--3962.
+
 \leavevmode\hypertarget{ref-fama1997}{}%
 Fama, E.F. \& French, K.R. 1997. Industry costs of equity. \emph{Journal
 of financial economics}. 43(2):153--193.
+
+\leavevmode\hypertarget{ref-immun}{}%
+Fontanet, A. \& Cauchemez, S. 2020. COVID-19 herd immunity: Where are
+we? \emph{Nature reviews. Immunology}. 20.
 
 \leavevmode\hypertarget{ref-regret}{}%
 Gandhi, L., Milkman, K.L., Ellis, S., Graci, H., Gromet, D., Mobarak,
@@ -761,6 +705,27 @@ the impact of large-scale, high-payoff vaccine regret lotteries.
 
 \leavevmode\hypertarget{ref-grinold2000}{}%
 Grinold, R.C. \& Kahn, R.N. 2000. Active portfolio management.
+
+\leavevmode\hypertarget{ref-adhere}{}%
+Humphrey, C.H., Small, D.S., Jensen, S.T., Volpp, K.G., Asch, D.A., Zhu,
+J. \& Troxel, A.B. 2019. Modeling lottery incentives for daily
+adherence. \emph{Statistics in Medicine}. 38(15):2847--2867.
+
+\leavevmode\hypertarget{ref-regr}{}%
+Husain, S.A., Diaz, K.M., Schwartz, J.E., Parsons, F.E., Burg, M.M.,
+Davidson, K.W. \& Kronish, I.M. 2019. Behavioral economics
+implementation: Regret lottery improves health patient study adherence.
+\emph{Contemporary Clinical Trials Communications}. 15:100387.
+
+\leavevmode\hypertarget{ref-nids}{}%
+Ingle, B., K. 2021. \emph{National income dynamics study -- coronavirus
+rapid mobile survey (NIDS-CRAM) 2020 - 2021 panel user manual.} Cape
+Town: Southern Africa Labour; Development Research Unit: Bureau for
+Economic Research.
+
+\leavevmode\hypertarget{ref-bad}{}%
+Kadkhoda, K. 2021. Herd immunity to COVID-19: Alluring and elusive.
+\emph{American Journal of Clinical Pathology}. 155(4):471--472.
 
 \leavevmode\hypertarget{ref-Texevier}{}%
 Katzke, N.F. 2017. \emph{{Texevier}: {P}ackage to create elsevier
@@ -776,6 +741,16 @@ RSA. 2021b. \emph{Latest vaccine statistics}. Department of Health.
 RSA. 2021a. \emph{COVID-19 coronavirus vaccine}. Department of Health.
 {[}Online{]}, Available:
 \url{https://www.gov.za/covid-19/vaccine/vaccine}.
+
+\leavevmode\hypertarget{ref-bank}{}%
+World Bank. 2020. \emph{The global economic outlook during the COVID-19
+pandemic: A changed world}. {[}Online{]}, Available:
+\url{https://www.worldbank.org/en/news/feature/2020/06/08/the-global-economic-outlook-during-the-covid-19-pandemic-a-changed-world}.
+
+\leavevmode\hypertarget{ref-who}{}%
+World Health Organisation. 2021. \emph{WHO coronavirus (COVID-19)
+dashboard}. {[}Online{]}, Available:
+\url{https://covid19.who.int/table}.
 
 \end{CSLReferences}
 

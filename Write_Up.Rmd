@@ -124,9 +124,11 @@ write_rds(Example_data, path = "data/Example_data.rds")
 
 # Introduction \label{Introduction}
 
-One critical mechanism through which epidemics are contained is through herd immunity. Herd immunity is where a certain amount of the population is immune to a disease and can be achieved through a certain threshold of the population being vaccinated. The South African government has stated that it aims to have 67% of the population vaccinated by the end of 2021 (@herd). In spite of this, many South Africans are hesitant to get the COVID vaccine; @stat reports that only 25% of South Africa's adult population have been fully vaccinated^[Statistics reported as of 11 October 2021]. Governments around the world are devising strategies to contain the pandemic; one solution is to incentivise vaccinations. Here, insights from behaviourial economics could provide a cost-effective solution: a vaccine lottery. 
+Coronavirus disease 2019 (COVID-19) has caused the largest public health crisis, and economic disaster of the 21st century so far (@bad p.471). According to the @who, COVID-19 has directly resulted in 4,859,277 deaths worldwide^[As of 13 October 2021], and the impact on the global economy has been severe (@bank). Policymakers are in urgent need of evidence-based strategies to contain the pandemic. As @immun[p.583] reports, one critical mechanism through which epidemics are controlled is through herd immunity. Herd immunity is where a certain amount of the population is immune to a disease and can be achieved through a certain threshold of the population being vaccinated. 
 
-This essay proposes a field experiment to investigate whether a vaccine lottery could improve vaccination rates in South Africa. Section \ref{lit} briefly reviews the relevant literature on behavioural economics and vaccine lotteries. Section \ref{design} describes the design of the experiment and outlines the three types of treatment groups. Section \label{treat} discusses how the treatment will be administered and how the data will be collected.  Lastly, section \ref{pre} gives a pre-analysis plan of the empirical analysis that will be performed on the data, and the final section (\ref{con}) concludes. 
+The South African government has stated that it aims to have 67% of the population vaccinated by the end of 2021 (@herd). In spite of this, many South Africans are hesitant to get the COVID vaccine; @stat reports that only 25% of South Africa's adult population have been fully vaccinated^[Statistics reported as of 11 October 2021]. Governments around the world are devising strategies to contain the pandemic; one solution is to incentivise vaccinations. Here, insights from behaviourial economics could provide a cost-effective solution: a vaccine lottery. 
+
+This essay proposes a field experiment to investigate whether a vaccine lottery could improve vaccination rates in South Africa. The experiment explores the effect of three different lottery types - standard, regret and referral - on the take up of vaccines. This essay is structured as follows. Section \ref{lit} briefly reviews the relevant literature on behavioural economics and vaccine lotteries. Section \ref{cont} elaborates on the South African context. Section \ref{design} describes the design of the experiment and outlines the three types of treatment groups. Section \label{treat} discusses how the treatment will be administered and how the data will be collected.  Lastly, section \ref{pre} gives a pre-analysis plan of the empirical analysis that will be performed on the data, and the final section (\ref{con}) concludes. 
 
 •	a clear statement of the research question and motivation for why this is interesting and important;
 •	a brief review of the relevant literature (both theoretical and empirical) which highlights the research gap your experiment will address;
@@ -139,15 +141,19 @@ amount of people have received the vaccine so far. Critical to reach herd immuni
 
 # Behavioural Economics and Health Incentives  \label{lit} 
 
-It is not unprecedented to use lotteries in public health interventions. To the best of my knowledge, this experiment would be the first randomized field experiment to assess the impact of lotteries on COVID-19 vaccine take-up in South Africa.
+It is not unprecedented to use lotteries in public health interventions. To the best of my knowledge, this experiment would be the first randomized field experiment to assess the impact of lotteries on COVID-19 vaccine take-up in South Africa. Several papers show that regret lotteries can improve health outcomes, such as @regr and @adhere
 
+Loss aversion, regret avoidance, social preferences
 
-behavioural economics theory and health incentive applications
+Individuals have a tendency to overweight small probabilities and this overestimate their chances of winning a lottery.
+behavioural economics theory and 
+
+health incentive applications
 gambling in SA 
 
 This paper addresses the gap pf vaccine lotteries in SA.
 
-# The South African Context
+# The South African Context {context}
 There are currently four vaccines which have been approved by the South African Health Products Regulatory Authority for use in South Africa: Johnson & Johnson (J&J), Pfizer, Sinovac and AstraZeneca. The two main vaccines being rolled out in South Africa are the J&J and Pfizer, which are both available for free. Vaccines are currently only available to individuals over the age of 18. The J&J vaccine only requires 1 dose; and the Pfizer vaccine requires two doses, 6 weeks apart. For the purposes of this field experiment, _fully vaccinated_ refers to an individual who has had either 1 J&J shot, or both shots of the Pfizer vaccine. _Vaccinated_ refers to an individual who has had 1 shot of either vaccine.
 
 According to @stat, 34% of South Africans are vaccinated, while only 25% are fully vaccinated. 
@@ -174,17 +180,32 @@ table <- xtable(data, caption = "Vaccination Statistics \\label{tab1}")
 
 # Experiment Design \label{design}
 
-The field experiment is designed Research question: could a vaccine lottery improve vaccination rates in South Africa? 
+The field experiment is designed to address the research question: could a vaccine lottery improve vaccination rates in South Africa? 
 
-The sample used will be the same as for NIDS CRAM. Nationally representative, other data included, only pay for marginal cost of including extra questions
+The sample used will be the same sample used for the Coronavirus Rapid Mobile Survey (NIDS-CRAM). NIDS-CRAM was created in response to the pandemic as a way to build a representative data set of the South African population to inform decision-making (@nids). Thus far, there have been five waves of NIDS-CRAM surveys, with wave 5 comprising a sample of 5,862 people being surveyed during 6 April to 11 May 2021 (@nids p.14). Wave 3 consisted of a total of 8,157 potential participants, of which 6,130 were successfully interviewed. For the purposes of this field experiment, the 8,157 people from Wave 3 will be contacted and asked to participate in the experiment. It seems reasonable to expect between 5,500 and 6,200 people to participate, given the previous rates of attrition experienced in NIDS-CRAM. 
 
-The NIDS CRAM sample will be split into 4 random groups, which will be randomised using the randomisation technique as proposed by @. The first group is the control group, where individuals will not be entered into any vaccine lottery. The other 3 groups are will receive different lottery treatments. There will be 3 monthly lotteries for each treatment group, which will run simultaneously. Thus, in total there will be 9 lotteries for this field experiment, with 3 lotteries every month. The cash prize of 
+The NIDS-CRAM sample will then be split into 4 groups of equal size. Assuming a conservative sample size of 5,500, each of the 4 groups will comprise 1,375 individuals. @random which will be randomised using the randomisation technique as proposed by @. The first group is the control group, where individuals will not be entered into any vaccine lottery. The other 3 groups are will receive different lottery treatments, which are explained below. There will be 3 monthly lotteries for each treatment group, which will run simultaneously. Thus, in total there will be 9 lotteries for this field experiment, with 3 lotteries every month. Each lottery will award a cash prize of R1,000,000. 
+
+NIDS-CRAM is a special follow-up survey of a subsample of adults from households that were part
+of the last wave (2017) of the National Income Dynamics Study (NIDS). NIDS was a large-scale
+longitudinal survey, run by the Southern Africa Labour and Development Research Unit (SALDRU),
+that tracked the social and economic well-being of South Africans from 2008 up to 2017.
+SALDRU (based at the University of Cape Town) was responsible for the NIDS-CRAM survey data
+collection, quality assurance and production. The NIDS-CRAM survey instrument includes a wide
+range of questions on income and employment, sociodemographic characteristics, and household
+welfare. This paper draws on questions about vaccine acceptance that were included in Waves 4
+and 5 of the NIDS-CRAM survey. Wave 4 was conducted from 2 February to 10 March 2021 with a
+sample of 4,792 individuals, and Wave 5 was conducted from 6 April to 11 May 2021 with a sample
+of 4,996. Compared to NIDS-CRAM Wave 1 (May and June 2020), Wave 4 had 31% attrition and
+Wave 5 had 28% attrition.
 
 For the first treatment group, if an individual has received a vaccination shot^[An individual only need a receive one shot of any vaccine - receiving the first shot of the Pfizer qualifies an individual for that month's lottery] within a given month, she will be entered into that month's vaccine lottery. At the end of the month, a winner is randomly selected from the lottery pool. Once it is verifed that the winner has been vaccinated, she will be privately contacted and will receive a cash prize. It will then be announced via sms to everyone in the treatment group (group 1) that the lottery has been won, the amount of the lottery prize, and the winner's province. 
 
-Following the approach of @regret, the second lottery is a "regret lottery". Every individual in the sample is entered into a monthly lottery but an individual may only claim her prize if she has been vaccinated (i.e. had at least 1 shot of any vaccine). At month end, a winner is randomly drawn from the lottery pool. If the winner has been vaccinated, she will be privately notified and will receive a cash prize. It will then be announced via sms to everyone in the treatment group (group 2) that the lottery has been won, the amount of the cash prize, the winner's province and a reminder that only vaccinated individuals are eligible to win the lottery.
+Following the approach of @regret, the second lottery is a "regret lottery". Every individual in the sample is entered into a monthly lottery but an individual may only claim her prize if she has been vaccinated (i.e. had at least 1 shot of any vaccine). At month end, a winner is randomly drawn from the lottery pool. If the winner has been vaccinated, she will be privately notified and will receive a cash prize. It will then be announced via sms to everyone in the treatment group (group 3) that the lottery has been won, the amount of the cash prize, the winner's province and a reminder that only vaccinated individuals are eligible to win the lottery.
 
-The final treatment is a "referral lottery". 
+The final treatment is a "referral lottery". An individual is entered into the monthly lottery if 2 conditions are met: he is vaccinated, and he refers a friend to get vaccinated and the friend gets vaccinated. Both the individual from the sample and his friend are entered into the lottery. At the end of the month, a winner is selected, verified to be vaccinated and privately informed. An SMS is sent out to the treatment group with the same information as for group 2 and group 3, in addition to a message thanking the sample for protecting their friends as well as a reminder that they can refer more friends to be eligible for the following month's lottery. 
+
+Including an SMS after the lottery has won serves as a reminder that there is a 
 
 Table \ref{tab2} summarises the different treatments administered.
 
@@ -209,22 +230,9 @@ table <- xtable(data, caption = "Treatment Summary \\label{tab2}")
 
 ```
 
-
-
-
-Have 1 control group: no messages, no lotto
-Have 4 treatment groups:
-•	Send messages
-•	1 lottery where you are entered if you got at least 1 vaccination 
-•	1 lottery where a friend has to refer you
-•	1 regret lottery: everyone is entered into the lotto (receive sms) and can only win if vaccinated
-Can randomize across municipalities or provinces
-size of sample population for experiment
-
-
 Many South Africans are hesitant to get the COVID vaccine. As STATSA shows, amount of people have received the vaccine so far. Critical to reach herd immunity is improving vaccination rates. 
 In order to improve the take-up of vaccinations, a field experiment designed around a vaccination lottery is proposed. While some governments have considered and experimented with lump-sum payments, behavioural economics could provide a more cost-effective solution. Individuals have a tendency to overweight small probabilities and this overestimate their chances of winning a lottery. In South Africa, 
-Lit Review
+
 Theory: overweight small probabilities, gambling, social preferences, regret avoidance
 Empirical: vaccine field designs, lottery incentives, regret lottery incentives
 Several authors have experimented with lotteries as an incentive for vaccinations, although there have been no studies as of yet on the South African population.
@@ -232,6 +240,10 @@ Probles with vaccine studies: too few participants. A larger study could fill th
 
 
 # Treatment and Data \label{treat}
+
+The CRAM survey exists to provide monthly nationally-representative data on key outcomes such as unemployment, household income, child hunger and access to government grants.
+
+
 
 Partner with NIDS, department of health, vaccine administer, funding
 data collected at vaccine 
@@ -262,11 +274,9 @@ Data Collection
 There is a data collection system already set up at the vaccination sites so this extra data point would not be difficult to collect within the current tracking system. Depending on costs, the referral friend could be sent an sms thanking her for caring about others and getting them vaccinated, and letting her know that she has been entered into the draw. This is a positive reinforcement technique and shows people that the government is following up on their promise. This acknowledgement and transparency is expected to encourage more referrals. Once the lucky draw has been concluded, the data can be analysed, the purpose of which is to uncover whether the nudge increased vaccinations. 
 
 
-References are to be made as follows: @fama1997[p. 33] and @grinold2000 Such authors could also be referenced in brackets [@grinold2000] and together [@fama1997 \& @grinold2000]. Source the reference code from scholar.google.com by clicking on ``cite'' below article name. Then select BibTeX at the bottom of the Cite window, and proceed to copy and paste this code into your ref.bib file, located in the directory's Tex folder. Open this file in Rstudio for ease of management, else open it in your preferred Tex environment. Add and manage your article details here for simplicity - once saved, it will self-adjust in your paper.
+References are to be made as follows: @fama1997[p. 33]  Such authors could also be referenced in brackets [@grinold2000] and together [@fama1997 \& @grinold2000]. 
 
-> I suggest renaming the top line after \@article, as done in the template ref.bib file, to something more intuitive for you to remember. Do not change the rest of the code. Also, be mindful of the fact that bib references from google scholar may at times be incorrect. Reference Latex forums for correct bibtex notation.
-
-
+> I suggest renaming the top line after \@article, as done in the template ref.bib file, to something more intuiti
 
 ```{r Figure1,  warning =  FALSE, fig.align = 'center', fig.cap = "Caption Here \\label{Figure1}", fig.ext = 'png', fig.height = 3, fig.width = 6}
 
@@ -324,46 +334,6 @@ table <- xtable(data, caption = "Long Table Example")
 
 <!-- hfill can be used to create a space, like here between text and table. -->
 
-
-```{r, results = 'asis'}
-
-if(!require(huxtable)) install.packages(huxtable)
-library(huxtable)
-data(diamonds, package = 'ggplot2')
-Title <- "Regression Output"
-Label <- "Reg01"
-lm1 <- lm(price ~ carat, diamonds)
-lm2 <- lm(price ~ depth, diamonds)
-lm3 <- lm(price ~ carat + depth, diamonds)
-htab <-
-huxreg(lm1, lm2, lm3,
-                statistics = c(N = "nobs", R2 = "r.squared"),
-                note = "%stars%.") %>%
-  set_caption(Title) %>%
-  set_label(Label)
-# More settings:
-font_size(htab) <- 12
-# Let's change regression names: this is slightly hacky, but works. Comment out this section to see what the default looks like:
-  Names <- c( "Reg1", "Reg2", "Reg3")
-  for(i in 1:length(Names)) {
-    htab[1,][[1+i]] <- Names[i]
-  }
-# Now simply call the table:
-htab
-
-```
-
-FYI - R also recently introduced the gt package, which is worthwhile exploring too.
-
-# Lists
-
-To add lists, simply using the following notation
-
-* This is really simple
-
-    + Just note the spaces here - writing in R you have to sometimes be pedantic about spaces...
-
-* Note that Rmarkdown notation removes the pain of defining \LaTeX environments!
 
 # Conclusion \label{con}
 
