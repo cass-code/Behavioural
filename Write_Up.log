@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.13)  13 OCT 2021 18:31
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.13)  14 OCT 2021 01:32
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -529,12 +529,12 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip74
 )
-Package hyperref Info: Option `breaklinks' set `true' on input line 87.
+Package hyperref Info: Option `breaklinks' set `true' on input line 91.
 
 Package hyperref Warning: Option `bookmarks' has already been used,
-(hyperref)                setting the option has no effect on input line 87.
+(hyperref)                setting the option has no effect on input line 91.
 
-Package hyperref Info: Option `colorlinks' set `true' on input line 87.
+Package hyperref Info: Option `colorlinks' set `true' on input line 91.
 
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/siunitx/siunit
 x.sty
@@ -672,24 +672,24 @@ LaTeX Warning: Label `treat' multiply defined.
 )
 \openout1 = `Write_Up.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 166.
-LaTeX Font Info:    ... okay on input line 166.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 170.
+LaTeX Font Info:    ... okay on input line 170.
 
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/epstopdf-pkg/e
 pstopdf-base.sty
@@ -736,7 +736,7 @@ e
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-Package hyperref Info: Link coloring ON on input line 166.
+Package hyperref Info: Link coloring ON on input line 170.
 
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/hyperref/namer
 ef.sty
@@ -752,9 +752,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 )
 \c@section@level=\count317
 )
-LaTeX Info: Redefining \ref on input line 166.
-LaTeX Info: Redefining \pageref on input line 166.
-LaTeX Info: Redefining \nameref on input line 166.
+LaTeX Info: Redefining \ref on input line 170.
+LaTeX Info: Redefining \pageref on input line 170.
+LaTeX Info: Redefining \nameref on input line 170.
 (./Write_Up.out) (./Write_Up.out)
 \@outlinefile=\write4
 \openout4 = `Write_Up.out'.
@@ -764,42 +764,42 @@ Package caption Info: End \AtBeginDocument code.
 <Tex/logo.png, id=48, 501.875pt x 330.23375pt>
 File: Tex/logo.png Graphic file (type png)
 <use Tex/logo.png>
-Package pdftex.def Info: Tex/logo.png  used on input line 183.
+Package pdftex.def Info: Tex/logo.png  used on input line 187.
 (pdftex.def)             Requested size: 326.30098pt x 214.71489pt.
 LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 2
-03.
+07.
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OML+lmm on input line 2
-03.
+07.
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 
-203.
+207.
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 
-203.
+207.
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10.95> on input line 203.
+(Font)              <10.95> on input line 207.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <8> on input line 203.
+(Font)              <8> on input line 207.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 203.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 203
+(Font)              <6> on input line 207.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 207
 .
 
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsa.
 fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 203
+LaTeX Font Info:    Trying to load font information for U+msb on input line 207
 .
 
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/amsfonts/umsb.
@@ -817,44 +817,44 @@ dftex.map} <./Tex/logo.png>] (./Write_Up.toc)
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 261.
+(Font)              <9> on input line 265.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 261.
+(Font)              <5> on input line 265.
 [3]
 LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
-24.
+31.
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [4] [5] [6]
-Overfull \hbox (35.0871pt too wide) in paragraph at lines 497--507
+) [4] [5] [6] [7]
+Overfull \hbox (35.0871pt too wide) in paragraph at lines 564--574
  [][] 
  []
 
-[7] [8]
-<Write_Up_files/figure-latex/Figure1-1.png, id=179, 433.62pt x 216.81pt>
+[8] [9]
+<Write_Up_files/figure-latex/Figure1-1.png, id=207, 433.62pt x 216.81pt>
 File: Write_Up_files/figure-latex/Figure1-1.png Graphic file (type png)
 <use Write_Up_files/figure-latex/Figure1-1.png>
 Package pdftex.def Info: Write_Up_files/figure-latex/Figure1-1.png  used on inp
-ut line 610.
+ut line 677.
 (pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
-[9 <./Write_Up_files/figure-latex/Figure1-1.png>] [10] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 758--762
+[10 <./Write_Up_files/figure-latex/Figure1-1.png>] [11] [12]
+Underfull \hbox (badness 10000) in paragraph at lines 847--851
 \T1/lmr/m/it/10.95 world\T1/lmr/m/n/10.95 . [On-line], Avail-able: [][]$https :
  / / www . worldbank . org / en / news / feature / 2020 / 06 / 08 /
  []
 
 No file Write_Up.bbl.
-[12] (./Write_Up.aux)
+[13] (./Write_Up.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
 Package rerunfilecheck Info: File `Write_Up.out' has not changed.
-(rerunfilecheck)             Checksum: 479501E6DF3BF2D24AD569809CCD2728;1494.
+(rerunfilecheck)             Checksum: A95D5A12BD296100469006EB3448E2F5;1509.
  ) 
 Here is how much of TeX's memory you used:
- 15281 strings out of 480559
- 270459 string characters out of 5901443
- 572778 words of memory out of 5000000
+ 15291 strings out of 480559
+ 270562 string characters out of 5901443
+ 572791 words of memory out of 5000000
  32587 multiletter control sequences out of 15000+600000
  462878 words of font info for 67 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
@@ -872,10 +872,10 @@ ra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/
 Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:
 /Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri1
 0.pfb>
-Output written on Write_Up.pdf (12 pages, 875658 bytes).
+Output written on Write_Up.pdf (13 pages, 883148 bytes).
 PDF statistics:
- 281 PDF objects out of 1000 (max. 8388607)
- 241 compressed objects within 3 object streams
- 59 named destinations out of 1000 (max. 500000)
+ 314 PDF objects out of 1000 (max. 8388607)
+ 273 compressed objects within 3 object streams
+ 69 named destinations out of 1000 (max. 500000)
  99 words of extra memory for PDF output out of 10000 (max. 10000000)
 

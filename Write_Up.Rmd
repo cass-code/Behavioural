@@ -126,21 +126,59 @@ write_rds(Example_data, path = "data/Example_data.rds")
 
 Coronavirus disease 2019 (COVID-19) has caused the largest public health crisis, and economic disaster of the 21st century so far [@bad p.471]. According to the @who, COVID-19 has directly resulted in 4,859,277 deaths worldwide^[As of 13 October 2021], and its impact on the global economy has been severe [@bank]. Policymakers are in urgent need of evidence-based strategies to contain the pandemic. As @immun[p.583] report, one critical mechanism through which epidemics are controlled is through herd immunity. Herd immunity arises when a sufficiently large proportion of the population achieves individual immunity to an infectious disease such that the transmission chain of the disease is halted [@bad p.471]. One method of establishing herd immunity is through vaccination programs [@immun p.583]. Preliminary empirical evidence shows that infection detection and vaccination strategies could be critical tools in subduing COVID-19, for example the study by @erad finds COVID-19 vaccines to be effective in Jakarta, Indonesia. Leaders of other countries have also implemented vaccine programs and the @who reports that a total of 6,364,021,792 vaccine doses have been administered globally as of 10 October 2021.
 
-In line with the international approach, South Africa has opted to issue vaccines in addition to social distancing and lockdown measures. The South African government has stated that it aims to have 67% of the population vaccinated by the end of 2021 [@herd]. However, many South Africans are hesitant to get the COVID vaccine; @stat records that only 25% of South Africa's adult population has been fully vaccinated as of 11 October 2021. @cram compiled a report, based on data from wave 5 of the NIDS-CRAM survey, and find that that around 20% of South Africans are concerned that COVID-19 vaccines are not safe. The report also shows that relatively few people in the sample registered to be vaccinated within two months after registration opened. @cram conclude that a significant portion of South Africans still have to be convinced to take the vaccine^[A sentiment report from @dep shows an interesting break down of different communities beliefs surrounding the vaccine]. While there are different ways to encourage vaccine uptake, such as mandatory vaccination or lump-sum transfers, insights from behaviourial economics could provide a more cost-effective solution: a vaccine lottery. 
+In line with the international approach, South Africa has opted to issue vaccines in addition to social distancing and lockdown measures. The South African government has stated that it aims to have 67% of the population vaccinated by the end of 2021 [@herd]. However, many South Africans are hesitant to get the COVID vaccine; @stat records that only 25% of South Africa's adult population has been fully vaccinated as of 11 October 2021. @cram compiled a report, based on data from wave 5 of the NIDS-CRAM survey, and find that that around 20% of South Africans are concerned that COVID-19 vaccines are not safe. The report also shows that relatively few people in the sample registered to be vaccinated within two months after registration opened. @cram conclude that a significant portion of South Africans still have to be convinced to take the vaccine^[A sentiment report from @report shows an interesting break down of different communities' beliefs surrounding the vaccine]. While there are different ways to encourage vaccine uptake, such as mandatory vaccination or lump-sum transfers, insights from behaviourial economics could provide a more cost-effective solution: a vaccine lottery. 
 
-This essay proposes a field experiment to investigate whether a vaccine lottery could improve vaccination rates in South Africa. The experiment explores the effect of three different lottery types - standard, regret and referral - on the take up of vaccines. This essay is structured as follows. Section \ref{lit} briefly reviews the relevant literature on behavioural economics and health incentives. Section \ref{context} elaborates on the South African context. Section \ref{design} describes the design of the experiment and outlines the three types of treatment groups. Section \label{treat} discusses how the treatment will be administered and how the data will be collected.  Lastly, section \ref{pre} gives a pre-analysis plan of the empirical analysis that will be performed on the data, and the final section (\ref{con}) concludes. 
+This essay^[This essay was written using the package Texevier by @Texevier] proposes a field experiment to investigate whether a vaccine lottery could improve vaccination rates in South Africa. The experiment explores the effect of three different lottery types - standard, regret and referral - on the take up of vaccines. This essay is structured as follows. Section \ref{lit} briefly reviews the relevant literature on behavioural economics and health incentives. Section \ref{context} elaborates on the South African context. Section \ref{design} describes the design of the experiment and outlines the three types of treatment groups. Section \label{treat} discusses how the treatment will be administered and how the data will be collected.  Lastly, section \ref{pre} gives a pre-analysis plan of the empirical analysis that will be performed on the data, and the final section (\ref{con}) concludes. 
 
 •	a clear statement of the research question and motivation for why this is interesting and important;
 
 # Behavioural Economics and Health Incentives  \label{lit} 
 
+Health professionals and policymakers are increasingly turning to behavioural economics to understand how people make health decisions and how behavioural insights can be used to improve public health outcomes [@health p.1]. While neoclassical economics assumes that people are perfectly rational agents, behavioural economics relaxes this assumption and uses psychology and economic theory to create more realistic models of human decision-making [@rabin]. As Khaneman and Tversky show, people are subject to certain biases and often make use of heuristics in their decision-making process, which can lead to predictable errors in judgment [@khan \& @fast \& @prospect]. A large literature has developed in the field of behavioural economics to investigate how these biases can be combated and sub-optimal choices overcome to improve welfare. @nudge introduced the idea of a nudge^[Nudge: an intervention that alters behaviour towards a desired action. In order for an intervention to qualify as a nudge, it should be cheap and easy to avoid @nudge] as a way to guide people to make better choices. For example, @nudge [p.176] proposed changing the default option for organ donation in America to opt-in as opposed to explicit consent. They found that many people who were willing to be organ donors did not take the necessary steps, and that the registration process appeared to deter otherwise willing donors. By changing the choice architecture to presumed consent (with an easy opt-out option), there would be more registered donors and more lives saved.
 
-Health professionals and policymakers are increasingly turning to behavioural economics to understand how people make health decisions and how these insights can be used to improve public health [@health p.1]. 
 
-A lottery system can be a cost-effective mechanism for changing behaviour compared to direct transfers because people tend to overweight small probabilities. Due to this nonlinear probability weighting, an individual overestimate her chances of winning a lottery. 
+A similar type of nudge can be applied to flu vaccines.
 
-Vaccine lotteries build on past research and core insights from behavioral economics. Past experiments -- albeit with far smaller rewards and populations -- indicate lottery incentives can effectively change other types of health decisions (6-8). Lotteries can be more cost-effective than direct payments because individuals tend to overweight small probabilities (9-11), which leads them to overvalue their long odds of winning a lottery (
+@flu compares interventions for vaccines 
 
+
+
+
+Possible interventions that directly
+address the problem of attention include reminding individuals more frequently or making
+reminders more salient, encouraging individuals to make a concrete plan about when and where
+they will get their flu shot, and moving the vaccination clinic to a central location to increase
+visibility. The first two interventions are practically free; the tNudges can be effective because people are influenced by
+stimuli that are visible and new; thus, at least in theory, small
+changes can lead to behavior modification. Several studies
+have found that simply prompting (nudging) individuals to
+make a plan increases the probability of the subject
+eventually engaging in the prompted health behavior, such
+as immunizations, healthy eating, and cancer screening.25
+
+
+For example, one study found that e-mailing patients
+appointment times and locations for their next influenza
+vaccination increased vaccination rates by 36%.26 Another
+intervention was even simpler. Rather than assigning a date
+and time for the patient to be vaccinated, patients were
+simply mailed a card that asked the patient to write down
+the day or day and time they planned to get the influenza
+vaccine (they were also sent the day and time of the free
+influenza vaccine clinics).27 Relative to a control condition
+(people who only received the information about the day
+and time of the clinics), those prompted to write down the
+day and time they planned to get the influenza vaccine were
+4.2 percentage points (12.7%) more likely to receive the
+vaccine at those clinics. Those prompted to write down the
+date but not the time were not significantly more likely to be
+vaccinated at the clinics.
+
+
+
+A lottery system can be a cost-effective mechanism for changing behaviour compared to direct transfers because people tend to overweight small probabilities. Due to this nonlinear probability weighting, an individual overestimates her chances of winning a lottery. 
+
+chance for regret, which behavioral scientists have found to be particularly motivating. Specifically, our “regret lottery” capitalizes on people’s general desire to avoid losses to a greater degree than seeking equivalent gains (12) and to avoid anticipated regret (20-25).
 
 
 It is not unprecedented to use lotteries in public health interventions. To the best of my knowledge, this experiment would be the first randomized field experiment to assess the impact of lotteries on COVID-19 vaccine take-up in South Africa. Several papers show that regret lotteries can improve health outcomes, such as @regr and @adhere
@@ -151,7 +189,6 @@ Loss aversion, regret avoidance, social preferences referral incentives
 Individuals have a tendency to overweight small probabilities and this overestimate their chances of winning a lottery.
 behavioural economics theory and 
 
-health incentive applications
 
 research gap your experiment will address;
 
@@ -339,7 +376,7 @@ table <- xtable(data, caption = "Long Table Example")
 
 # Conclusion \label{con}
 
-I hope you find this template useful. Remember, stackoverflow is your friend - use it to find answers to questions. Feel free to write me a mail if you have any questions regarding the use of this package. To cite this package, simply type citation("Texevier") in Rstudio to get the citation for @Texevier (Note that uncited references in your bibtex file will not be included in References).
+
 
 <!-- Make title of bibliography here: -->
 <!-- \newpage -->
