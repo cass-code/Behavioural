@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.13)  14 OCT 2021 01:32
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.13)  14 OCT 2021 05:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -825,26 +825,28 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 3
 31.
 (c:/Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) [4] [5] [6] [7]
-Overfull \hbox (35.0871pt too wide) in paragraph at lines 564--574
- [][] 
- []
-
-[8] [9]
-<Write_Up_files/figure-latex/Figure1-1.png, id=207, 433.62pt x 216.81pt>
+) [4] [5] [6] [7] [8] [9]
+<Write_Up_files/figure-latex/Figure1-1.png, id=227, 433.62pt x 216.81pt>
 File: Write_Up_files/figure-latex/Figure1-1.png Graphic file (type png)
 <use Write_Up_files/figure-latex/Figure1-1.png>
 Package pdftex.def Info: Write_Up_files/figure-latex/Figure1-1.png  used on inp
-ut line 677.
+ut line 682.
 (pdftex.def)             Requested size: 433.61894pt x 216.80946pt.
 [10 <./Write_Up_files/figure-latex/Figure1-1.png>] [11] [12]
-Underfull \hbox (badness 10000) in paragraph at lines 847--851
+Underfull \hbox (badness 10000) in paragraph at lines 862--867
+\T1/lmr/m/n/10.95 za / wp-[]content / uploads / 2021 / 07 / SAHPRA-[]CovidVacci
+neApproval _ Media-[]Release _ 1July2021 _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 876--880
 \T1/lmr/m/it/10.95 world\T1/lmr/m/n/10.95 . [On-line], Avail-able: [][]$https :
  / / www . worldbank . org / en / news / feature / 2020 / 06 / 08 /
  []
 
+[13]
 No file Write_Up.bbl.
-[13] (./Write_Up.aux)
+[14] (./Write_Up.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
@@ -852,8 +854,8 @@ Package rerunfilecheck Info: File `Write_Up.out' has not changed.
 (rerunfilecheck)             Checksum: A95D5A12BD296100469006EB3448E2F5;1509.
  ) 
 Here is how much of TeX's memory you used:
- 15291 strings out of 480559
- 270562 string characters out of 5901443
+ 15296 strings out of 480559
+ 270598 string characters out of 5901443
  572791 words of memory out of 5000000
  32587 multiletter control sequences out of 15000+600000
  462878 words of font info for 67 fonts, out of 8000000 for 9000
@@ -872,10 +874,10 @@ ra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr8.pfb><c:/Users/
 Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmr9.pfb><c:
 /Users/Cassandra/AppData/Roaming/TinyTeX/texmf-dist/fonts/type1/public/lm/lmri1
 0.pfb>
-Output written on Write_Up.pdf (13 pages, 883148 bytes).
+Output written on Write_Up.pdf (14 pages, 886526 bytes).
 PDF statistics:
- 314 PDF objects out of 1000 (max. 8388607)
- 273 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 345 PDF objects out of 1000 (max. 8388607)
+ 302 compressed objects within 4 object streams
+ 74 named destinations out of 1000 (max. 500000)
  99 words of extra memory for PDF output out of 10000 (max. 10000000)
 

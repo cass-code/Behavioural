@@ -312,8 +312,8 @@ there are different ways to encourage vaccine uptake, such as mandatory
 vaccination or lump-sum transfers, insights from behaviourial economics
 could provide a more cost-effective solution: a vaccine lottery.
 
-This essay\footnote{This essay was written using the package Texevier by
-  \protect\hyperlink{ref-Texevier}{Katzke}
+This essay\footnote{This essay was written in R using the package
+  Texevier by \protect\hyperlink{ref-Texevier}{Katzke}
   (\protect\hyperlink{ref-Texevier}{2017})} proposes a field experiment
 to investigate whether a vaccine lottery could improve vaccination rates
 in South Africa. The experiment explores the effect of three different
@@ -354,9 +354,9 @@ welfare. \protect\hyperlink{ref-nudge}{Thaler \& Sunstein}
 (\protect\hyperlink{ref-nudge}{2008}) introduced the idea of a
 nudge\footnote{Nudge: an intervention that alters behaviour towards a
   desired action. In order for an intervention to qualify as a nudge, it
-  should be cheap and easy to avoid \protect\hyperlink{ref-nudge}{Thaler
-  \& Sunstein} (\protect\hyperlink{ref-nudge}{2008})} as a way to guide
-people to make better choices. For example,
+  should be cheap and easy to avoid
+  (\protect\hyperlink{ref-nudge}{Thaler \& Sunstein, 2008}).} as a way
+to guide people to make better choices. For example,
 \protect\hyperlink{ref-nudge}{Thaler \& Sunstein}
 (\protect\hyperlink{ref-nudge}{2008: 176}) proposed changing the default
 option for organ donation in America to opt-in as opposed to explicit
@@ -366,34 +366,59 @@ appeared to deter otherwise willing donors. By changing the choice
 architecture to presumed consent (with an easy opt-out option), there
 would be more registered donors and more lives saved.
 
-There are other empirical studies that
-\protect\hyperlink{ref-flu}{Madrian} (\protect\hyperlink{ref-flu}{2014})
+A similar type of nudge can be applied to flu vaccines. A study
+conducted by \protect\hyperlink{ref-opt}{Chapman, Li, Colby \& Yoon}
+(\protect\hyperlink{ref-opt}{2010}) on a sample of 478 participants
+(split into two treatment groups of 239 each) found that vaccination
+rates increased by 36\% under an opt-in default than under an opt-out
+condition. \protect\hyperlink{ref-flu}{Madrian}
+(\protect\hyperlink{ref-flu}{2014: 9}) proposes other interventions for
+promoting flu vaccination, such as moving the vaccination clinic to a
+central location for visibility purposes, reminding people more
+frequently to get vaccinated, and encouraging people to plan the time
+and location they will receive their flu vaccination. The last two
+nudges have been, to some extent, implemented in South Africa for the
+COVID vaccine: the government has sent out SMS's encouraging South
+Africans to get vaccinated, and a self registration portal has been set
+up for citizens to enroll in the Electronic Vaccination Data System
+(EVDS) (\protect\hyperlink{ref-evds}{Republic of South Africa}
+(\protect\hyperlink{ref-evds}{2021})). This portal can be seen as a type
+of commitment device, in addition to being a data collection mechanism.
 
-Nudges can be effective because people are influenced by stimuli that
-are visible and new; thus, at least in theory, small changes can lead to
-behavior modification. Several studies have found that simply prompting
-(nudging) individuals to make a plan increases the probability of the
-subject eventually engaging in the prompted health behavior, such as
-immunizations, healthy eating, and cancer screening.25
+Behavioural economic theory and empirical studies suggest that lotteries
+can be a useful device for public health interventions. A lottery system
+can be a cost-effective mechanism for changing behaviour compared to
+direct transfers because people tend to overweight small probabilities,
+which is a key insight from the work by
+\protect\hyperlink{ref-prospect}{Kahneman \& Tversky}
+(\protect\hyperlink{ref-prospect}{1979: 286}) on prospect theory. Due to
+this nonlinear probability weighting, an individual overestimates her
+chances of winning a lottery. \protect\hyperlink{ref-hiv}{Björkman
+Nyqvist, Corno, Walque \& Svensson} (\protect\hyperlink{ref-hiv}{2018})
+ran an experiment in Lesotho, where participants were entered into a
+financial lottery and they could win a cash prize if they tested
+negative for sexually transmitted infections. In spite of the fact that
+the lottery had low expected payments, HIV incidence decreased by 21.4\%
+over two years as a result of the intervention.
+\protect\hyperlink{ref-hiv}{Björkman Nyqvist, Corno, Walque \& Svensson}
+(\protect\hyperlink{ref-hiv}{2018}) found that the lottery incentive
+worked particularly well at targeting participants who were more prone
+to risky sexual behaviour. This supports the theory that risk-seeking
+individuals value lotteries more.
 
-For example, one study found that e-mailing patients appointment times
-and locations for their next influenza vaccination increased vaccination
-rates by 36\%.26 Another intervention was even simpler. Rather than
-assigning a date and time for the patient to be vaccinated, patients
-were simply mailed a card that asked the patient to write down the day
-or day and time they planned to get the influenza vaccine (they were
-also sent the day and time of the free influenza vaccine clinics).27
-Relative to a control condition (people who only received the
-information about the day and time of the clinics), those prompted to
-write down the day and time they planned to get the influenza vaccine
-were 4.2 percentage points (12.7\%) more likely to receive the vaccine
-at those clinics. Those prompted to write down the date but not the time
-were not significantly more likely to be vaccinated at the clinics.
+\protect\hyperlink{ref-hiv}{Björkman Nyqvist, Corno, Walque \& Svensson}
+(\protect\hyperlink{ref-hiv}{2018}) investigated the impact of a lottery
+intervention on the health choices of men living with HIV in SOuth
+Africa. The paper found that the participants who were eligible for the
+lottery started antiretroviral therapy sooner than those in the control
+group (\protect\hyperlink{ref-hiv}{Björkman Nyqvist, Corno, Walque \&
+Svensson, 2018: 49}). This provides some indication that a vaccine
+lottery in South Africa could potentially be effective. Other studies
 
-A lottery system can be a cost-effective mechanism for changing
-behaviour compared to direct transfers because people tend to overweight
-small probabilities. Due to this nonlinear probability weighting, an
-individual overestimates her chances of winning a lottery.
+\protect\hyperlink{ref-regr}{Husain, Diaz, Schwartz, Parsons, Burg,
+Davidson \& Kronish} (\protect\hyperlink{ref-regr}{2019}) and
+\protect\hyperlink{ref-adhere}{Humphrey, Small, Jensen, Volpp, Asch, Zhu
+\& Troxel} (\protect\hyperlink{ref-adhere}{2019})
 
 chance for regret, which behavioral scientists have found to be
 particularly motivating. Specifically, our ``regret lottery''
@@ -401,41 +426,34 @@ capitalizes on people's general desire to avoid losses to a greater
 degree than seeking equivalent gains (12) and to avoid anticipated
 regret (20-25).
 
-It is not unprecedented to use lotteries in public health interventions.
-To the best of my knowledge, this experiment would be the first
-randomized field experiment to assess the impact of lotteries on
-COVID-19 vaccine take-up in South Africa. Several papers show that
-regret lotteries can improve health outcomes, such as
-\protect\hyperlink{ref-regr}{Husain, Diaz, Schwartz, Parsons, Burg,
-Davidson \& Kronish} (\protect\hyperlink{ref-regr}{2019}) and
-\protect\hyperlink{ref-adhere}{Humphrey, Small, Jensen, Volpp, Asch, Zhu
-\& Troxel} (\protect\hyperlink{ref-adhere}{2019})
+This experiment would contribute to the empirical literature on
+lotteries as public health interventions, and addresses the gap in the
+literature on vaccine take-up incentives in South Africa. To the best of
+my knowledge, this experiment would be the first randomized field
+experiment to assess the impact of lotteries on COVID-19 vaccination
+rates in South Africa. Several papers show that regret lotteries can
+improve health outcomes, such as
 
 Loss aversion, regret avoidance, social preferences referral incentives
-
-Individuals have a tendency to overweight small probabilities and this
-overestimate their chances of winning a lottery. behavioural economics
-theory and
-
-research gap your experiment will address;
-
-This paper addresses the gap pf vaccine lotteries in SA.
 
 \hypertarget{the-south-african-context}{%
 \section{\texorpdfstring{The South African Context
 \label{context}}{The South African Context }}\label{the-south-african-context}}
 
-There are currently four vaccines which have been approved by the South
-African Health Products Regulatory Authority for use in South Africa:
-Johnson \& Johnson (J\&J), Pfizer, Sinovac and AstraZeneca. The two main
-vaccines being rolled out in South Africa are the J\&J and Pfizer, which
-are both available for free. Vaccines are currently only available to
-individuals over the age of 18. The J\&J vaccine only requires 1 dose;
-and the Pfizer vaccine requires two doses, 6 weeks apart. For the
-purposes of this field experiment, \emph{fully vaccinated} refers to an
-individual who has had either 1 J\&J shot, or both shots of the Pfizer
-vaccine. \emph{Vaccinated} refers to an individual who has had 1 shot of
-either vaccine.
+There are currently four vaccines which have been approved by the
+\protect\hyperlink{ref-sah}{South African Health Products Regulatory
+Authority} (\protect\hyperlink{ref-sah}{2021}) for use in South Africa:
+Johnson \& Johnson (J\&J), Pfizer and AstraZeneca. COVID-19 vaccines are
+available free of charge but citizens have to register on the EVID
+portal before receiving their dose. Due to supply constraints, vaccines
+were rolled out in phases and are currently available to individuals
+over the age of 18 only. The J\&J vaccine only requires 1 dose; the
+Pfizer and AstraZeneca vaccines require two doses each, taken 6 weeks
+apart. For the purposes of this field experiment, \emph{fully
+vaccinated} refers to an individual who has had 1 J\&J shot, or two
+shots of the Pfizer vaccine, or both shots of the AstraZeneca vaccine.
+\emph{Vaccinated} refers to an individual who has had 1 shot of any
+vaccine.
 
 According to \protect\hyperlink{ref-stat}{Department of Health}
 (\protect\hyperlink{ref-stat}{2021b}), 34\% of South Africans are
@@ -481,9 +499,8 @@ African population to inform decision-making
 (\protect\hyperlink{ref-nids}{Ingle, 2021}). Thus far, there have been
 five waves of NIDS-CRAM surveys, with wave 5 comprising a sample of
 5,862 people being surveyed during 6 April to 11 May 2021
-(\protect\hyperlink{ref-nids}{Ingle}
-(\protect\hyperlink{ref-nids}{2021}) p.14). Wave 3 consisted of a total
-of 8,157 potential participants, of which 6,130 were successfully
+(\protect\hyperlink{ref-nids}{Ingle, 2021: 14}). Wave 3 consisted of a
+total of 8,157 potential participants, of which 6,130 were successfully
 interviewed. For the purposes of this field experiment, the 8,157 people
 from Wave 3 will be contacted and asked to participate in the
 experiment. It seems reasonable to expect between 5,500 and 6,200 people
@@ -567,30 +584,13 @@ Group & Treatment \\
   \midrule
 Control & No lottery \\ 
   Group 1 & Individual is entered into a lottery once they are vaccinated \\ 
-  Group 2 & Everyone in the group is entered into a lottery; only vaccinated individuals can claim the prize \\ 
+  Group 2 & Everyone in the group is entered into a lottery; only vaccinated individuals can \\ 
+   & claim the prize \\ 
   Group 3 & Individual is entered if she is vaccinated and refers a friend, who gets vaccinated \\ 
    \bottomrule
 \end{tabular}
 \caption{Treatment Summary \label{tab2}} 
 \end{table}
-
-Many South Africans are hesitant to get the COVID vaccine. As STATSA
-shows, amount of people have received the vaccine so far. Critical to
-reach herd immunity is improving vaccination rates. In order to improve
-the take-up of vaccinations, a field experiment designed around a
-vaccination lottery is proposed. While some governments have considered
-and experimented with lump-sum payments, behavioural economics could
-provide a more cost-effective solution. Individuals have a tendency to
-overweight small probabilities and this overestimate their chances of
-winning a lottery. In South Africa,
-
-Theory: overweight small probabilities, gambling, social preferences,
-regret avoidance Empirical: vaccine field designs, lottery incentives,
-regret lottery incentives Several authors have experimented with
-lotteries as an incentive for vaccinations, although there have been no
-studies as of yet on the South African population. Probles with vaccine
-studies: too few participants. A larger study could fill this gap in the
-literature.
 
 \hypertarget{treatment-and-data}{%
 \section{\texorpdfstring{Treatment and Data
@@ -603,6 +603,8 @@ The CRAM survey exists to provide monthly nationally-representative data
 on key outcomes such as unemployment, household income, child hunger and
 access to government grants.
 
+funding
+
 Partner with NIDS, department of health, vaccine administer, funding
 data collected at vaccine add 3 questions to NIDS data cram
 
@@ -612,6 +614,9 @@ data collected at vaccine add 3 questions to NIDS data cram
 
 • a pre-analysis plan of the empirical analysis that will be performed
 on the data.
+
+\url{https://jamanetwork.com/journals/jama/fullarticle/2781792} - method
+for analysis
 
 Overview In this field experiment, a person who refers his/her friend to
 receive a vaccine would be entered into a lucky draw, with a monetary
@@ -738,6 +743,9 @@ mpg & cyl & disp & hp & drat & wt & qsec & vs & am & gear & carb \\
 \section{\texorpdfstring{Conclusion
 \label{con}}{Conclusion }}\label{conclusion}}
 
+If the experiment results provide enough evidence that a vaccine lottery
+is effective, the EVDS nudge is to rollout to whole country and possible
+
 \newpage
 
 \hypertarget{references}{%
@@ -752,12 +760,22 @@ M. 2021. Impact of early detection and vaccination strategy in COVID-19
 eradication program in jakarta, indonesia. \emph{BMC Research Notes}.
 14(1):1--7.
 
+\leavevmode\hypertarget{ref-hiv}{}%
+Björkman Nyqvist, M., Corno, L., Walque, D. de \& Svensson, J. 2018.
+Incentivizing safer sexual behavior: Evidence from a lottery experiment
+on HIV prevention. \emph{American Economic Journal: Applied Economics}.
+10(3):287--314.
+
 \leavevmode\hypertarget{ref-cram}{}%
 Burger, R., Maughan-Brown, B., Köhler, T., English, R. \& Tameris, M.
 2021. \emph{A shot in the arm for south africa - increased openness to
 accepting a COVID-19 vaccine: Evidence from NIDS-CRAM waves 4 and 5}.
 National Income Dynamics Study (NIDS) -- Coronavirus Rapid Mobile Survey
 (CRAM). {[}Online{]}, Available: \url{https://cramsurvey.org/reports/}.
+
+\leavevmode\hypertarget{ref-opt}{}%
+Chapman, G.B., Li, M., Colby, H. \& Yoon, H. 2010. {Opting In vs Opting
+Out of Influenza Vaccination}. \emph{JAMA}. 304(1):43--44.
 
 \leavevmode\hypertarget{ref-stat}{}%
 Department of Health. 2021b. \emph{Latest vaccine statistics}. Republic
@@ -816,7 +834,7 @@ Kahneman, D. 2011. \emph{Thinking, fast and slow}. Macmillan.
 
 \leavevmode\hypertarget{ref-prospect}{}%
 Kahneman, D. \& Tversky, A. 1979. Prospect theory: An analysis of
-decision under risk. \emph{Econometrica}. 47(2):363--391.
+decision under risk. \emph{Econometrica}. 47(2):263--291.
 
 \leavevmode\hypertarget{ref-Texevier}{}%
 Katzke, N.F. 2017. \emph{{Texevier}: {P}ackage to create elsevier
@@ -835,6 +853,17 @@ design. {[}Online{]}, Available: \url{http://dx.doi.org/10.3386/w20318}.
 \leavevmode\hypertarget{ref-rabin}{}%
 Rabin, M. 2002. A perspective on psychology and economics.
 \emph{European economic review}. 46(4-5):657--685.
+
+\leavevmode\hypertarget{ref-evds}{}%
+Republic of South Africa. 2021. \emph{Electronic vaccination data system
+(EVDS) self registration portal}. {[}Online{]}, Available:
+\url{https://www.gov.za/covid-19/vaccine/evds}.
+
+\leavevmode\hypertarget{ref-sah}{}%
+South African Health Products Regulatory Authority. 2021. \emph{MEDIA
+RELEASE ON THE APPROVAL PROCESS OF COVID VACCINES}. {[}Online{]},
+Available:
+\url{https://www.sahpra.org.za/wp-content/uploads/2021/07/SAHPRA-CovidVaccineApproval_Media-Release_1July2021_FINAL.pdf}.
 
 \leavevmode\hypertarget{ref-nudge}{}%
 Thaler, R. \& Sunstein, C. 2008. \emph{Nudge: Improving decisions about
