@@ -126,9 +126,9 @@ write_rds(Example_data, path = "data/Example_data.rds")
 
 Coronavirus disease 2019 (COVID-19) has caused the largest public health crisis, and economic disaster of the 21st century so far [@bad p.471]. According to the @who, COVID-19 has directly resulted in 4,859,277 deaths worldwide^[As of 13 October 2021], and its impact on the global economy has been severe [@bank]. Policymakers are in urgent need of evidence-based strategies to contain the pandemic. As @immun[p.583] report, one critical mechanism through which epidemics are controlled is through herd immunity. Herd immunity arises when a sufficiently large proportion of the population achieves individual immunity to an infectious disease such that the transmission chain of the disease is halted [@bad p.471]. One method of establishing herd immunity is through vaccination programs [@immun p.583]. Preliminary empirical evidence shows that infection detection and vaccination strategies could be critical tools in subduing COVID-19, for example the study by @erad finds COVID-19 vaccines to be effective in Jakarta, Indonesia. Leaders of other countries have also implemented vaccine programs and the @who reports that a total of 6,364,021,792 vaccine doses have been administered globally as of 10 October 2021.
 
-In line with the international approach, South Africa has opted to issue vaccines in addition to social distancing and lockdown measures. The South African government has stated that it aims to have 67% of the population vaccinated by the end of 2021 [@herd]. However, many South Africans are hesitant to get the COVID vaccine; @stat records that only 25% of South Africa's adult population has been fully vaccinated as of 11 October 2021. @cram compiled a report, based on data from wave 5 of the NIDS-CRAM survey, and find that that around 20% of South Africans are concerned that COVID-19 vaccines are not safe. The report also shows that relatively few people in the sample registered to be vaccinated within two months after registration opened. @cram conclude that a significant portion of South Africans still have to be convinced to take the vaccine^[A sentiment report from @report shows an interesting break down of different communities' beliefs surrounding the vaccine]. While there are different ways to encourage vaccine uptake, such as mandatory vaccination or lump-sum transfers, insights from behaviourial economics could provide a more cost-effective solution: a vaccine lottery. 
+In line with the international approach, South Africa has opted to issue vaccines in addition to social distancing and lockdown measures. The South African government has stated that it aims to have 67% of the population vaccinated by the end of 2021 [@herd]. However, many South Africans are hesitant to get the COVID vaccine; the @stat records that only 25% of South Africa's adult population has been fully vaccinated as of 11 October 2021. @cram compiled a report, based on data from wave 5 of the NIDS-CRAM survey, and find that that around 20% of South Africans are concerned that COVID-19 vaccines are not safe. The report also shows that relatively few people in the sample registered to be vaccinated within two months after registration opened. @cram conclude that a significant portion of South Africans still have to be convinced to take the vaccine^[A sentiment report from @report shows an interesting break down of different communities' beliefs surrounding the vaccine]. While there are different ways to encourage vaccine uptake, such as mandatory vaccination or lump-sum transfers, insights from behaviourial economics could provide a more cost-effective solution: a vaccine lottery. 
 
-This essay^[This essay was written in R using the package Texevier by @Texevier] proposes a field experiment to investigate whether a vaccine lottery could improve vaccination rates in South Africa. The experiment explores the effect of three different lottery types - standard, regret and referral - on the take up of vaccines. This essay is structured as follows. Section \ref{lit} briefly reviews the relevant literature on behavioural economics and health incentives. Section \ref{context} elaborates on the South African context. Section \ref{design} describes the design of the experiment and outlines the three types of treatment groups. Section \label{treat} discusses how the treatment will be administered and how the data will be collected.  Lastly, section \ref{pre} gives a pre-analysis plan of the empirical analysis that will be performed on the data, and the final section (\ref{con}) concludes. 
+This essay^[This essay was written in R using the package Texevier by @Texevier] proposes a field experiment to investigate whether a vaccine lottery could improve vaccination rates in South Africa. The experiment explores the effect of three different lottery types - standard, regret and referral - on the take up of vaccines. This essay is structured as follows. Section \ref{lit} briefly reviews the relevant literature on behavioural economics and health incentives. Section \ref{context} elaborates on the South African context. Section \ref{design} describes the design of the experiment and outlines the three types of treatment groups. Section \ref{treatment} discusses how the treatment will be administered and how the data will be collected.  Lastly, section \ref{pre} gives a pre-analysis plan of the empirical analysis that will be performed on the data, and the final section (\ref{con}) concludes. 
 
 •	a clear statement of the research question and motivation for why this is interesting and important;
 
@@ -138,27 +138,26 @@ Health professionals and policymakers are increasingly turning to behavioural ec
 
 A similar type of nudge can be applied to flu vaccines. A study conducted by @opt on a sample of 478 participants (split into two treatment groups of 239 each) found that vaccination rates increased by 36% under an opt-in default than under an opt-out condition. @flu [p.9] proposes other interventions for promoting flu vaccination, such as moving the vaccination clinic to a central location for visibility purposes, reminding people more frequently to get vaccinated, and encouraging people to plan the time and location they will receive their flu vaccination. The last two nudges have been, to some extent, implemented in South Africa for the COVID vaccine: the government has sent out SMS's encouraging South Africans to get vaccinated, and a self registration portal has been set up for citizens to enroll in the Electronic Vaccination Data System (EVDS) [@evds]. This portal can be seen as a type of commitment device, in addition to being a data collection mechanism.
 
-Behavioural economic theory and empirical studies suggest that lotteries can be a useful device for public health interventions. A lottery system can be a cost-effective mechanism for changing behaviour compared to direct transfers because people tend to overweight small probabilities, which is a key insight from the work by @prospect [p.286] on prospect theory. Due to this nonlinear probability weighting, an individual overestimates her chances of winning a lottery. @hiv ran an experiment in Lesotho, where participants were entered into a financial lottery and they could win a cash prize if they tested negative for sexually transmitted infections. In spite of the fact that the lottery had low expected payments, HIV incidence decreased by 21.4\% over two years as a result of the intervention. @hiv found that the lottery incentive worked particularly well at targeting participants who were more prone to risky sexual behaviour. This supports the theory that risk-seeking individuals value lotteries more.    
+Behavioural economic theory and empirical studies suggest that lotteries can be a useful device for public health interventions. A lottery system can be a cost-effective mechanism for changing behaviour compared to direct transfers because people tend to overweight small probabilities, which is a key insight from the work by @prospect [p.286] on prospect theory. Due to this nonlinear probability weighting, an individual overestimates her chances of winning a lottery. @hiv ran an experiment in Lesotho, where participants were entered into a financial lottery and they could win a cash prize if they tested negative for sexually transmitted infections. In spite of the fact that the lottery had low expected payments, HIV incidence decreased by 21.4\% over two years as a result of the intervention. @hiv found that the lottery incentive worked particularly well at targeting participants who were more prone to risky sexual behaviour. This supports the theory that risk-seeking individuals value lotteries more. In a related study, @hiv investigated the impact of a lottery intervention on the health choices of men living with HIV in South Africa. The paper found that the participants who were eligible for the lottery started antiretroviral therapy sooner than those in the control group [@hiv p.49]. This provides some indication that a vaccine lottery in South Africa could potentially be effective. 
 
-@hiv investigated the impact of a lottery intervention on the health choices of men living with HIV in SOuth Africa. The paper found that the participants who were eligible for the lottery started antiretroviral therapy sooner than those in the control group [@hiv p.49]. This provides some indication that a vaccine lottery in South Africa could potentially be effective. Other studies
+Drawing further on prospect theory, the concepts of loss aversion, reference dependence and regret avoidance can also be included in health interventions through a "regret lottery". @prospect describe loss aversion as a cognitive bias whereby people experience losses as more painful than the pleasure they receive from an equivalent gain. Thus, people are more willing to take on risk in order to avoid a loss, and are less risk seeking when pursuing gain [@prospect p.268]. Reference dependence follows on from loss aversion and suggests that people define gains and losses relative to a reference point [@ref p.1039]. People are also subject to regret avoidance; where there is a significant emotional cost attached to regret and thus people will make decisions to avoid regretting alternative decisions in the future [@regret]. 
 
-@regr and @adhere
+A regret lottery takes advantage of these three principles by entering all participants into a lottery but the winner can only claim the prize contingent on some condition. If this condition is not met, a new winner is selected. By entering all participants, people's reference point is shifted to "I have a chance at winning the lottery". However, if a person is not eligible to claim the prize because he does not meet the required condition, he feels he is losing the chance to claim the prize. He is more likely to try and meet the condition in order to minimise the pain of this loss. Additionally, he will want to avoid the regret that would come from having missed the opportunity to claim the prize. 
 
+Several empirical papers investigate how "regret lotteries" can improve health behaviours.
+@adhere analysed the effect of a daily regret lottery on cholesterol-lowering, and heart medication adherence. Every day, members of the treatment group chose a two-digit number. If a participant's number matched at least one digit of the randomly drawn lottery number, she was eligible to win a cash prize. However, she could only claim her winnings if she had taken her relevant prescribed medication the previous day. The results of the paper show that the treatment group better adhered to their medication regime than the control group. The authors also noted that participants appeared to be engaged even after 6 months of the program. In a different study, @regr found that implementing a weekly electronic regret lottery increased adherence to a self-monitoring study protocol. 
 
-
-chance for regret, which behavioral scientists have found to be particularly motivating. Specifically, our “regret lottery” capitalizes on people’s general desire to avoid losses to a greater degree than seeking equivalent gains (12) and to avoid anticipated regret (20-25).
-
-
-This experiment would contribute to the empirical literature on lotteries as public health interventions, and addresses the gap in the literature on vaccine take-up incentives in South Africa. To the best of my knowledge, this experiment would be the first randomized field experiment to assess the impact of lotteries on COVID-19 vaccination rates in South Africa. Several papers show that regret lotteries can improve health outcomes, such as 
-
-Loss aversion, regret avoidance, social preferences referral incentives
+Some states in America have attempted to run regret lotteries to encourage people to get vaccinated against COVID. An unpublished paper by @duck evaluates the effect of weekly regret lotteries in Philadelphia. After giving away around \$400,000 in cash prizes to residents, the authors did not find convincing evidence that the regret lotteries significantly increased first-dose vaccination rates for the treatment groups. Although, the authors do acknowledge that there were some design flaws in the experiment that could be clouding the results [@duck p.3]. Similarly disappointing results were found in Ohio, where randomly selected vaccine recipients could receive up to \$1 million. The study by @ohio found no increase in COVID vaccination rates following the lottery incentive. To the best of my knowledge, there have been no studies on COVID-19 vaccine lotteries in South Africa^[It should be noted, however, that First National Bank is running a COVID-19 vaccine lottery for FNB customers, with total cash prizes amounting to R18 million] - a gap which this experiment is intended to fill. This experiment would also contribute to the empirical literature on lotteries as public health interventions and the integration of behavioural economics into public policy.
 
 
 # The South African Context \label{context}
 
-There are currently four vaccines which have been approved by the @sah for use in South Africa: Johnson & Johnson (J&J), Pfizer and AstraZeneca. COVID-19 vaccines are available free of charge but citizens have to register on the EVID portal before receiving their dose. Due to supply constraints, vaccines were rolled out in phases and are currently available to individuals over the age of 18 only. The J&J vaccine only requires 1 dose; the Pfizer and AstraZeneca vaccines require two doses each, taken 6 weeks apart. For the purposes of this field experiment, _fully vaccinated_ refers to an individual who has had 1 J&J shot, or two shots of the Pfizer vaccine, or both shots of the AstraZeneca vaccine. _Vaccinated_ refers to an individual who has had 1 shot of any vaccine.
+@lotto investigated the lottery habits and attitudes of South Africans based on a sample of 3,090 households randomly distributed across the country. The integrated report shows that around 35% participated in lottery activities in the year preceding the study [@lotto p.78-79]. This suggests that a significant amount of South Africans engage in lotteries, which supports the implementation of a vaccine lottery, as there is evidence of "demand" for lotteries. The average amount spent on lottery activities was R156 per month, whereas the average monthly winnings of lottery schemes was R110. A rational economic agent would recognize that the expected value for playing lotteries is negative ($-$R46) and not buy lottery tickets. The fact that people still play the lotto despite a negative expected value suggests that South Africans may not be rational, and behavioural economic insights are applicable. The gross revenue from gambling activities, excluding the National Lottery, amounted to R32.7 billion for the 2019 financial year [@gamble p.3]. This represents 0.64\% of South Africa's 2019 nominal GDP (R5.1 trillion) [@statsa p.8], which suggests that gambling is a lucrative market in South Africa and a lotto device could be an appropriate tool for incentivising behaviour.
 
-According to @stat, 34% of South Africans are vaccinated, while only 25% are fully vaccinated. 
+
+There are currently four vaccines which have been approved by the @sah for use in South Africa: Johnson & Johnson (J&J), Pfizer and AstraZeneca. COVID-19 vaccines are available free of charge, but citizens have to register on the EVID portal before receiving their dose. Due to supply constraints, vaccines were rolled out in phases and are currently available to individuals over the age of 18 only. The J&J vaccine only requires 1 dose; the Pfizer and AstraZeneca vaccines require two doses each, taken 6 weeks apart. For the purposes of this field experiment, _fully vaccinated_ refers to an individual who has had 1 J&J shot, or two shots of the Pfizer vaccine, or both shots of the AstraZeneca vaccine. _Vaccinated_ refers to an individual who has had 1 shot of any vaccine.
+
+According to @stat, 34% of South Africans are vaccinated, while only 25% are fully vaccinated. These low vaccination numbers Table \ref{tab1} below gives the breakdown of vaccination rates by province. 
 
 ```{r tab1, results = 'asis', warning=FALSE, message=FALSE, echo=FALSE}
 
@@ -180,7 +179,6 @@ table <- xtable(data, caption = "Vaccination Statistics \\label{tab1}")
 
 ```
 
-gambling in SA 
 
 # Experiment Design \label{design}
 
@@ -190,28 +188,17 @@ The field experiment is designed to address the research question: could a vacci
 
 The sample used will be the same sample used for the Coronavirus Rapid Mobile Survey (NIDS-CRAM). NIDS-CRAM was created in response to the pandemic as a way to build a representative data set of the South African population to inform decision-making [@nids]. Thus far, there have been five waves of NIDS-CRAM surveys, with wave 5 comprising a sample of 5,862 people being surveyed during 6 April to 11 May 2021 [@nids p.14]. Wave 3 consisted of a total of 8,157 potential participants, of which 6,130 were successfully interviewed. For the purposes of this field experiment, the 8,157 people from Wave 3 will be contacted and asked to participate in the experiment. It seems reasonable to expect between 5,500 and 6,200 people to participate, given the previous rates of attrition experienced in NIDS-CRAM. 
 
-The NIDS-CRAM sample will then be split into 4 groups of equal size. Assuming a conservative sample size of 5,500, each of the 4 groups will comprise 1,375 individuals. @random which will be randomised using the randomisation technique as proposed by @. The first group is the control group, where individuals will not be entered into any vaccine lottery. The other 3 groups are will receive different lottery treatments, which are explained below. There will be 3 monthly lotteries for each treatment group, which will run simultaneously. Thus, in total there will be 9 lotteries for this field experiment, with 3 lotteries every month. Each lottery will award a cash prize of R1,000,000. 
+If we assume a conservative sample size of 5,500 and a vaccination proportion of 34\%, then there will be 3630 eligible participants for the study, since we are interested in unvaccinated individuals. This sample will be split into 4 groups of equal size (907), and randomized according to technique proposed by  @random. One group is the control group, where individuals will not be entered into any vaccine lottery. The other 3 groups are will receive different lottery treatments, which are explained below. There will be 3 monthly lotteries for each treatment group, which will run simultaneously. Thus, in total there will be 9 lotteries for this field experiment, with 3 lotteries every month. Each lottery winner will receive a cash prize of R1,000,000. 
 
-NIDS-CRAM is a special follow-up survey of a subsample of adults from households that were part
-of the last wave (2017) of the National Income Dynamics Study (NIDS). NIDS was a large-scale
-longitudinal survey, run by the Southern Africa Labour and Development Research Unit (SALDRU),
-that tracked the social and economic well-being of South Africans from 2008 up to 2017.
-SALDRU (based at the University of Cape Town) was responsible for the NIDS-CRAM survey data
-collection, quality assurance and production. The NIDS-CRAM survey instrument includes a wide
-range of questions on income and employment, sociodemographic characteristics, and household
-welfare. This paper draws on questions about vaccine acceptance that were included in Waves 4
-and 5 of the NIDS-CRAM survey. Wave 4 was conducted from 2 February to 10 March 2021 with a
-sample of 4,792 individuals, and Wave 5 was conducted from 6 April to 11 May 2021 with a sample
-of 4,996. Compared to NIDS-CRAM Wave 1 (May and June 2020), Wave 4 had 31% attrition and
-Wave 5 had 28% attrition.
+For the first treatment group (group 1), if an individual has received a vaccination shot within a given month, she will be entered into that month's vaccine lottery. At the end of the month, a winner is randomly selected from the lottery pool. Once it is verified that the winner has been vaccinated, she will be privately contacted and will receive a cash prize. The second lottery is a regret lottery. Every individual in the sample (group 2) is entered into a monthly lottery but an individual may only claim her prize if she has been vaccinated (i.e. had at least 1 shot of any vaccine). At month end, a winner is randomly drawn from the lottery pool. If the winner has been vaccinated, she will be privately notified and will receive a cash prize. If the winner has not been vaccinated, she will receive a "regret" message stating that she would have won the cash prize if she had been vaccinated. 
 
-For the first treatment group, if an individual has received a vaccination shot^[An individual only need a receive one shot of any vaccine - receiving the first shot of the Pfizer qualifies an individual for that month's lottery] within a given month, she will be entered into that month's vaccine lottery. At the end of the month, a winner is randomly selected from the lottery pool. Once it is verifed that the winner has been vaccinated, she will be privately contacted and will receive a cash prize. It will then be announced via sms to everyone in the treatment group (group 1) that the lottery has been won, the amount of the lottery prize, and the winner's province. 
+The final treatment is a "referral lottery". An individual is entered into the monthly lottery if 2 conditions are met: he is vaccinated, and he refers a friend to get vaccinated and the friend gets vaccinated. Both the individual from the sample and his friend are entered into the lottery. At the end of the month, a winner is selected, and once he and his referral partner are verified to be vaccinated, he will be privately informed. An individual can refer more than friend to be vaccinated in any given month. However, individuals from the 
 
-Following the approach of @regret, the second lottery is a "regret lottery". Every individual in the sample is entered into a monthly lottery but an individual may only claim her prize if she has been vaccinated (i.e. had at least 1 shot of any vaccine). At month end, a winner is randomly drawn from the lottery pool. If the winner has been vaccinated, she will be privately notified and will receive a cash prize. It will then be announced via sms to everyone in the treatment group (group 3) that the lottery has been won, the amount of the cash prize, the winner's province and a reminder that only vaccinated individuals are eligible to win the lottery.
+Whenever a lottery is won, it will be announced via SMS to all participants in the relevant treatment group. The amount of the lottery prize and the winner's province will also be included in the SMS. This serves as a reminder of how large the cash prize is, and including the winner's province makes winning seem more tangible/possible. Group 2's SMS will include a reminder that only vaccinated individuals are eligible to win the lottery. Group 3's SMS will include a reminder that they can refer as many friends as they like to be eligible for the following month's lottery. All SMS's will end with: "Thank you for vaccinating and keeping our country safe." as one final nudge to encourage/guilt participants to vaccinate. 
 
-The final treatment is a "referral lottery". An individual is entered into the monthly lottery if 2 conditions are met: he is vaccinated, and he refers a friend to get vaccinated and the friend gets vaccinated. Both the individual from the sample and his friend are entered into the lottery. At the end of the month, a winner is selected, verified to be vaccinated and privately informed. An SMS is sent out to the treatment group with the same information as for group 2 and group 3, in addition to a message thanking the sample for protecting their friends as well as a reminder that they can refer more friends to be eligible for the following month's lottery. 
+Target Group
+The lucky draw is anticipated to attract people who are risk-on (they enjoy gambling, and are less worried about getting vaccinated), and poorer individuals for whom winning money is more attractive. These target groups are desirable as they are less likely to get the vaccine, and the government would like to maximise the number of vaccinated people. Additionally, if there are individuals who want to be vaccinated but procrastinate getting the vaccine (e.g. naïve hyperbolic discounters), setting a deadline for the lucky draw could increase the utility of getting the vaccine earlier enough to overcome the procrastination problem. There is no downside or extra cost for having people enter the lucky draw who would otherwise still have got the vaccine.
 
-Including an SMS after the lottery has won serves as a reminder that there is a 
 
 Table \ref{tab2} summarises the different treatments administered.
 
@@ -237,11 +224,11 @@ table <- xtable(data, caption = "Treatment Summary \\label{tab2}")
 ```
 
 
-# Treatment and Data \label{treat}
+# Treatment and Data \label{treatment}
 
 •	an explanation of how the treatments will be administered and data gathered (including proposed partner institutions);
 
-The CRAM survey exists to provide monthly nationally-representative data on key outcomes such as unemployment, household income, child hunger and access to government grants.
+The CRAM survey exists to provide monthly nationally-representative data on topics such as unemployment, household income, child hunger and access to government grants.
 
 funding
 
@@ -255,72 +242,15 @@ add 3 questions to NIDS data cram
 
 https://jamanetwork.com/journals/jama/fullarticle/2781792 - method for analysis
 
-Overview
-In this field experiment, a person who refers his/her friend to receive a vaccine would be entered into a lucky draw, with a monetary prize, created by the government. The purpose behind this nudge is to encourage people who would otherwise not have got a Covid vaccine, to do so. The hypothesis is that there should be an increase in the total number of people receiving a Covid vaccine after the nudge is implemented. Increasing the number of vaccinations is important as medical research shows that vaccines decrease the probability of contracting Covid-19 and are also effective at reducing the severity of the symptoms of the virus for those who do contract it. 
-The Nudge
-The nudge addresses behaviour by creating an environment where there is social pressure to get a vaccine (if I wanted to enter the lucky draw, I would pressure my friend into getting the vaccine). It is also likely that if a person asks her friend to get the vaccine so she can enter the lucky draw, she will reciprocate and get the vaccine as well so that her friend may enter the draw, which will also increase the number of people getting vaccinated. 
-For the vaccines that require two doses (e.g. Pfizer), a person’s name could be withdrawn, if the second shot is not given within a certain amount of time. This makes use of loss aversion, where people who already have their names in the draw feel the pain of having their names withdrawn more intensely than the pleasure of having their names added a second time to the draw for getting their second shot.
-Target Group
-The lucky draw is anticipated to attract people who are risk-on (they enjoy gambling, and are less worried about getting vaccinated), and poorer individuals for whom winning money is more attractive. These target groups are desirable as they are less likely to get the vaccine, and the government would like to maximise the number of vaccinated people. Additionally, if there are individuals who want to be vaccinated but procrastinate getting the vaccine (e.g. naïve hyperbolic discounters), setting a deadline for the lucky draw could increase the utility of getting the vaccine earlier enough to overcome the procrastination problem. There is no downside or extra cost for having people enter the lucky draw who would otherwise still have got the vaccine.
+
+ting their second shot.
+
 Proposed Partner Institutions
 This field experiment would be in collaboration with the South African government and facilities that conduct vaccinations (e.g. Clicks). The government would be where the data is centralized and the administers of vaccines would all be data collection nodes. After a person has received a vaccine, the administer would ask if the person received a referral for the shot, and then note the ID number of the friend in addition to the individual’s details. 
 
 Data Collection
 There is a data collection system already set up at the vaccination sites so this extra data point would not be difficult to collect within the current tracking system. Depending on costs, the referral friend could be sent an sms thanking her for caring about others and getting them vaccinated, and letting her know that she has been entered into the draw. This is a positive reinforcement technique and shows people that the government is following up on their promise. This acknowledgement and transparency is expected to encourage more referrals. Once the lucky draw has been concluded, the data can be analysed, the purpose of which is to uncover whether the nudge increased vaccinations. 
 
-> I suggest renaming the top line after \@article, as done in the template ref.bib file, to something more intuiti
-
-```{r Figure1,  warning =  FALSE, fig.align = 'center', fig.cap = "Caption Here \\label{Figure1}", fig.ext = 'png', fig.height = 3, fig.width = 6}
-
-  # This is just a random plot to show you a plot. This is done if the getwd() does not point to your Template's directory.
-  # Set WD below to your project's working directory.
-
-  g <-
-  ggplot(data = mtcars) +
-  geom_point(aes(x = disp, y = hp, color = cyl)) +
-  theme_bw() +
-  # theme(legend.position = "none") +
-  theme(plot.title = element_text(size = 10)) +
-  theme(axis.title = element_text(size = 10),
-        axis.title.x = element_text()) +
-  labs(y = "y-axis", x = "x-axis", title = "Some amazing plot")
-
-g
-
-```
-
-
-
-To reference calculations __in text__, _do this:_ From table \ref{tab1} we see the average value of mpg is `r mean(mtcars[1:5,]$mpg)`.
-
-```{r LongTable, results = 'asis'}
-
-library(xtable)
-
-data = mtcars %>% tibble::as_tibble()
-  addtorow          <- list()
-  addtorow$pos      <- list()
-  addtorow$pos[[1]] <- c(0)
-  addtorow$command  <- c(paste("\\hline \n",
-                               "\\endhead \n",
-                               "\\hline \n",
-                               "{\\footnotesize Continued on next page} \n",
-                               "\\endfoot \n",
-                               "\\endlastfoot \n",sep=""))
-table <- xtable(data, caption = "Long Table Example")
-  print.xtable(table,
-             tabular.environment = "longtable",
-             floating = FALSE, # Leave this as is.
-             table.placement = 'H', # Leave this as is.
-             booktabs = T, # Aesthetics
-             include.rownames = FALSE,  # Typically you don't want this in a table.
-             add.to.row = addtorow, # For adding the Continued on next page part...
-             comment = FALSE,
-             caption.placement = 'top',  # Where do you want the caption?
-             size="\\fontsize{12pt}{13pt}\\selectfont"  # Size of text in table..
-             )
-# See https://cran.r-project.org/web/packages/xtable/vignettes/xtableGallery.pdf for table inspiration
-```
 
 \hfill
 
@@ -331,21 +261,10 @@ table <- xtable(data, caption = "Long Table Example")
 If the experiment results provide enough evidence that a vaccine lottery is effective, the EVDS  nudge is to rollout to whole country and possible  
 
 
-<!-- Make title of bibliography here: -->
-<!-- \newpage -->
-
 \newpage
 
 # References {-}
 
 <div id="refs"></div>
 
-
-# Appendix {-}
-
-## Appendix A {-}
-
-Some appendix information here
-
-## Appendix B {-}
 
