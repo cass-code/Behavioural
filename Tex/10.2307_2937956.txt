@@ -1,0 +1,13 @@
+@article{ref,
+ ISSN = {00335533, 15314650},
+ URL = {http://www.jstor.org/stable/2937956},
+ author = {Amos Tversky and Daniel Kahneman},
+ journal = {The Quarterly Journal of Economics},
+ number = {4},
+ pages = {1039--1061},
+ publisher = {Oxford University Press},
+ title = {Loss Aversion in Riskless Choice: A Reference-Dependent Model},
+ volume = {106},
+ year = {1991}
+}
+
