@@ -17,7 +17,7 @@ Entry3: "Professor R. Burger"
 Uni_Logo: Tex/logo.png # Place a logo in the indicated location (from your root, e.g. defaults to ~/Tex/Logo.png) and uncomment this line. Leave uncommented for no image
 Logo_width: 0.9 # If using a logo - use this to set width (size) of image
 Entry4: "Behavioural Economics 871 Essay"
-Entry5: "15 October 2021"
+Entry5: "15 October 2021 |Word Count: 2970"
 # Entry6: April 2020
 # Entry7:
 # Entry8:
@@ -201,7 +201,7 @@ The lucky draw is anticipated to attract people who are risk-on (they enjoy gamb
 
 The two main partner institutions for this field experiment would be the South African government -- the Department of Health in particular -- and the CRAM team and partners^[The CRAM project is supported by the Department of Planning Monitoring and Evaluation (DPME), the Research on Socioeconomic Policy (RESEP) group at Stellenbosch University, and the Southern Africa Labour and Development Research Unit (SALDRU) at UCT.]. Vaccine data is collected by health professionals at pharmacies, clinics and other vaccination sites around South Africa. Currently, the EVDS captures a vaccinee's names, Identity Number, medical aid details, residential address, email address, phone numbers, employment details, professional category, and health status. The only additional information needed for the experiment is the name, ID number, and phone number of the referring individual (from treatment group 3). The person receiving the vaccine is responsible for supplying these details to the vaccine administrator. An SMS will be sent to the friend getting vaccinated and the referring individual, both of whom will be asked to confirm that the details of the referring participant are correct. The name of the data collection agent at the vaccine site is also recorded. If the friend (the non-referring individual) wins the lottery, the person who captured the vaccine details will receive R10,000. This should act as an incentive for healthcare workers to correctly capture the referral details.     
 
-The other
+The other data collection mechanism occurs through t
 
 Funding for the experiment would need to cover: R9,000,000 for the cash prizes, the admin fees associated with the SMS program and R90,000 in incentive fees for the personnel who captured the lottery winners' vaccine information. It is assumed that 
 

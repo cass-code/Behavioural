@@ -100,6 +100,32 @@ try and meet the condition in order to minimise the pain of this loss. Additiona
 avoid the regret that would come from having missed the opportunity to claim the prize.
 
 
+
+Several empirical papers investigate how “regret lotteries” can improve health behaviours. Humphrey,
+Small, Jensen, Volpp, Asch, Zhu & Troxel analysed the effect of a daily regret lottery on cholesterol-lowering, and heart medication adherence. Every day, members of the treatment group chose a two-digit number. If a participant’s number matched at least one digit of the randomly drawn
+lottery number, she was eligible to win a cash prize. However, she could only claim her winnings if she
+Page 5
+had taken her relevant prescribed medication the previous day. The results of the paper show that the
+treatment group better adhered to their medication regime than the control group. The authors also noted that participants appeared to be engaged even after 6 months of the program. In a different study Husain, Diaz, Schwartz, Parsons, Burg, Davidson & Kronish found that implementing
+a weekly regret lottery increased adherence to a
+self-monitoring study protocol.
+
+
+Some states in America have attempted to run regret lotteries to encourage people to get vaccinated
+against COVID. An unpublished paper by Gandhi, Milkman, Ellis, Graci, Gromet, Mobarak, Butten-
+heim, Duckworth, Pope, Stanford, Thaler & Volpp  evaluates the effect of weekly regret lotteries
+in Philadelphia. After giving away around $400,000 in cash prizes to residents, the authors did not
+find convincing evidence that the regret lotteries significantly increased first-dose vaccination rates for
+the treatment groups. Although, the authors do acknowledge that there were some design flaws in
+the experiment that could be clouding the results  Similarly disappointing results
+were found in Ohio, where randomly selected vaccine recipients could receive up to $1 million. The
+study by Walkey, Law & Bosch  found no increase in COVID vaccination rates following the
+lottery incentive. To the best of my knowledge, there have been no studies on COVID-19 vaccine
+lotteries in South Africa 5 - a gap which this experiment is intended to fill. This experiment would also
+contribute to the empirical literature on lotteries as public health interventions and the integration of
+behavioural economics into public policy.
+
+
 There are currently four vaccines which have been approved by the South African Health Products
 Regulatory Authority for use in South Africa: Johnson & Johnson (J&J), Pfizer, Sinovac and As-
 traZeneca. The two main vaccines being rolled out in South Africa are the J&J and Pfizer, which are
