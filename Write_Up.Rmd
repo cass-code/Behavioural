@@ -95,28 +95,9 @@ output:
   # Abstract to be written here. The abstract should not be too long and should provide the reader with a good understanding what you are writing about. Academic papers are not like novels where you keep the reader in suspense. To be effective in getting others to read your paper, be as open and concise about your findings here as possible. Ideally, upon reading your abstract, the reader should feel he / she must read your paper in entirety.
 ---
 
-<!-- First: Set your default preferences for chunk options: -->
-
-<!-- If you want a chunk's code to be printed, set echo = TRUE. message = FALSE stops R printing ugly package loading details in your final paper too. I also suggest setting warning = FALSE and checking for warnings in R, else you might find ugly warnings in your paper. -->
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, warning = FALSE, fig.width = 6, fig.height = 5, fig.pos="H", fig.pos = 'H')
-# Note: Include = FALSE implies the code is executed, but not printed in your pdf.
-# warning and message = FALSE implies ugly messages and warnings are removed from your pdf.
-# These should be picked up when you execute the command chunks (code sections below) in your rmd, not printed in your paper!
-
-# Lets load in example data, and see how this can be stored and later called from your 'data' folder.
-if(!require("tidyverse")) install.packages("tidyverse")
-library(tidyverse)
-Example_data <- Texevier::Ex_Dat
-
-# Notice that as you are working in a .Rproj file (I am assuming you are) - the relative paths of your directories start at your specified root.
-# This means that when working in a .Rproj file, you never need to use getwd() - it is assumed as your base root automatically.
-write_rds(Example_data, path = "data/Example_data.rds")
-
 ```
-
-
 <!-- ############################## -->
 <!-- # Start Writing here: -->
 <!-- ############################## -->
@@ -124,7 +105,7 @@ write_rds(Example_data, path = "data/Example_data.rds")
 
 # Introduction \label{Introduction}
 
-Coronavirus disease 2019 (COVID-19) has caused the largest public health crisis, and economic disaster of the 21st century so far [@bad p.471]. According to the @who, COVID-19 has directly resulted in 4,859,277 deaths worldwide^[As of 13 October 2021], and its impact on the global economy has been severe [@bank]. Policymakers are in urgent need of evidence-based strategies to contain the pandemic. As @immun[p.583] report, one critical mechanism through which epidemics are controlled is through herd immunity. Herd immunity arises when a sufficiently large proportion of the population achieves individual immunity to an infectious disease such that the transmission chain of the disease is halted [@bad p.471]. One method of establishing herd immunity is through vaccination programs [@immun p.583]. Preliminary empirical evidence shows that infection detection and vaccination strategies could be critical tools in subduing COVID-19, for example the study by @erad finds COVID-19 vaccines to be effective in Jakarta, Indonesia. Leaders of other countries have also implemented vaccine programs and the @who reports that a total of 6,364,021,792 vaccine doses have been administered globally as of 10 October 2021.
+Coronavirus disease 2019 (COVID-19) has caused the largest public health crisis, and economic disaster of the 21st century so far [@bad p.471]. According to the @who, COVID-19 has directly resulted in 4,859,277 deaths worldwide^[As of 13 October 2021], and its impact on the global economy has been severe [@bank]. Policymakers are in urgent need of evidence-based strategies to contain the pandemic. As @immun[p.583] report, one critical mechanism through which epidemics are controlled is herd immunity. Herd immunity arises when a sufficiently large proportion of the population achieves individual immunity to an infectious disease such that the transmission chain of the disease is halted [@bad p.471]. One method of establishing herd immunity is through vaccination programs [@immun p.583]. Preliminary empirical evidence shows that infection detection and vaccination strategies could be critical tools in subduing COVID-19. For example the study by @erad finds COVID-19 vaccines to be effective in Jakarta, Indonesia. Leaders of other countries have also implemented vaccine programs and the @who reports that a total of 6,364,021,792 vaccine doses have been administered globally as of 10 October 2021.
 
 In line with the international approach, South Africa has opted to issue vaccines in addition to social distancing and lockdown measures. The South African government has stated that it aims to have 67% of the population vaccinated by the end of 2021 [@herd]. However, many South Africans are hesitant to get the COVID-19 vaccine; the @stat records that only 25% of South Africa's adult population has been fully vaccinated as of 11 October 2021. @cram compiled a report, based on data from wave 5 of the NIDS-CRAM survey, and find that that around 20% of South Africans are concerned that COVID-19 vaccines are not safe. The report also shows that relatively few people in the sample registered to be vaccinated within two months after registration opened. @cram conclude that a significant portion of South Africans still have to be convinced to take the vaccine^[A sentiment report from @report shows an interesting break down of different communities' beliefs surrounding the vaccine]. While there are different ways to encourage vaccine uptake, such as mandatory vaccination or lump-sum transfers, insights from behaviourial economics could provide a more cost-effective solution: a vaccine lottery. 
 
@@ -151,9 +132,7 @@ Some states in America have attempted to run regret lotteries to encourage peopl
 
 @lotto investigated the lottery habits and attitudes of South Africans based on a sample of 3,090 households randomly distributed across the country. The integrated report shows that around 35% participated in lottery activities in the year preceding the study [@lotto p.78-79]. This suggests that a significant amount of South Africans engage in lotteries, which supports the implementation of a vaccine lottery, as there is evidence of "demand" for lotteries. The average amount spent on lottery activities was R156 per month, whereas the average monthly winnings of lottery schemes was R110. A rational economic agent would recognize that the expected value for playing lotteries is negative ($-$R46) and not buy lottery tickets. The fact that people still play the lotto despite a negative expected value suggests that South Africans may not be rational, and behavioural economic insights are applicable. The gross revenue from gambling activities, excluding the National Lottery, amounted to R32.7 billion for the 2019 financial year [@gamble p.3]. This represents 0.64\% of South Africa's 2019 nominal GDP (R5.1 trillion) [@statsa p.8], which suggests that gambling is a lucrative market in South Africa and a lotto device could be an appropriate tool for incentivising behaviour.
 
-There vaccines which have been approved by the @sah for use in South Africa include: Johnson & Johnson (J&J), Pfizer and AstraZeneca. COVID-19 vaccines are available free of charge, but citizens have to register on the EVID portal before receiving their dose. Due to supply constraints, vaccines were rolled out in phases and are currently available to individuals over the age of 18 only. The J&J vaccine only requires 1 dose; the Pfizer and AstraZeneca vaccines require two doses each. For this experiment, _fully vaccinated_ refers to an individual who has had the maximum required doses of any vaccine. _Vaccinated_ refers to an individual who has had 1 shot of any vaccine.
-
-According to @stat, 34% of South Africans are vaccinated, while only 25% are fully vaccinated. These low vaccination numbers Table \ref{tab1} below gives the breakdown of vaccination rates by province. 
+There vaccines which have been approved by the @sah for use in South Africa include: Johnson & Johnson (J&J), Pfizer and AstraZeneca. COVID-19 vaccines are available free of charge, but citizens have to register on the EVID portal before receiving their dose. Due to supply constraints, vaccines were rolled out in phases and are currently available to individuals over the age of 18 only. The J&J vaccine only requires 1 dose; the Pfizer and AstraZeneca vaccines require two doses each. For this experiment, _fully vaccinated_ refers to an individual who has had the maximum required doses of any vaccine. _Vaccinated_ refers to an individual who has had 1 shot of any vaccine. According to @stat, 34% of South Africans are vaccinated, while only 25% are fully vaccinated. These low numbers indicate that an intervention is necessary to improve vaccination rates if South Africa wants to achieve herd immunity. Table \ref{tab1} below gives the breakdown of vaccination rates by province. 
 
 ```{r tab1, results = 'asis', warning=FALSE, message=FALSE, echo=FALSE}
 
@@ -187,12 +166,11 @@ If we assume a conservative sample size of 5,500 and a vaccination proportion of
 
 For the first treatment group (group 1), if an individual has received a vaccination shot within a given month, she will be entered into that month's vaccine lottery. At the end of the month, a winner is randomly selected from the lottery pool. Once it is verified that the winner has been vaccinated, she will be privately contacted and will receive a cash prize. The second lottery is a regret lottery. Every individual in the sample (group 2) is entered into a monthly lottery but an individual may only claim her prize if she has been vaccinated (i.e. had at least 1 shot of any vaccine). At month end, a winner is randomly drawn from the lottery pool. If the winner has been vaccinated, she will be privately notified and will receive a cash prize. If the winner has not been vaccinated, she will receive a "regret" message stating that she would have won the cash prize if she had been vaccinated. 
 
-The final treatment is a "referral lottery". An individual is entered into the monthly lottery if 2 conditions are met: he is vaccinated, and he refers a friend to get vaccinated and the friend gets vaccinated. Both the individual from the sample and his friend are entered into the lottery. At the end of the month, a winner is selected, and once he and his referral partner are verified to be vaccinated, he will be privately informed. An individual can refer more than friend to be vaccinated in any given month. However, only individuals from the treatment group can refer friends (i.e. people outside of group 3 will not be entered into the lottery for referring others to get vaccinated). Group 3 participants may not refer any person in the control group or in group 1 or group 2 (to avoid contamination).   
+The final treatment is a "referral lottery". An individual is entered into the monthly lottery if 2 conditions are met: he is vaccinated, and he refers a friend to get vaccinated and the friend gets vaccinated. Both the individual from the sample and his friend are entered into the lottery. At the end of the month, a winner is selected, and once he and his referral partner are verified to be vaccinated, he will be privately informed. An individual can refer more than friend to be vaccinated in any given month. However, only individuals from the treatment group can refer friends (i.e. people outside of group 3 will not be entered into the lottery for referring others to get vaccinated). Group 3 participants may not refer any person in the control group or in group 1 or group 2 (to avoid contamination).
 
 Whenever a lottery is won, it will be announced via SMS to all participants in the relevant treatment group. The amount of the lottery prize and the winner's province will also be included in the SMS. This serves as a reminder of how large the cash prize is, and including the winner's province makes winning seem more tangible/possible. Group 2's SMS will include a reminder that only vaccinated individuals are eligible to win the lottery. Group 3's SMS will include a reminder that participants can refer as many friends as they like to be eligible for the following month's lottery. All SMS's will end with: "Thank you for vaccinating and keeping our country safe!" as one final nudge to encourage/guilt participants to vaccinate.
 
 Table \ref{tab2} summarises the different treatments administered.
-
 
 ```{r tab2, results = 'asis', warning=FALSE, message=FALSE, echo=FALSE}
 
@@ -214,16 +192,21 @@ table <- xtable(data, caption = "Treatment Summary \\label{tab2}")
 
 ```
 
-
 ## Theory of Change
 
 Target Group
-The lucky draw is anticipated to attract people who are risk-on (they enjoy gambling, and are less worried about getting vaccinated), and poorer individuals for whom winning money is more attractive. These target groups are desirable as they are less likely to get the vaccine, and the government would like to maximise the number of vaccinated people. Additionally, if there are individuals who want to be vaccinated but procrastinate getting the vaccine (e.g. naïve hyperbolic discounters), setting a deadline for the lucky draw could increase the utility of getting the vaccine earlier enough to overcome the procrastination problem. There is no downside or extra cost for having people enter the lucky draw who would otherwise still have got the vaccine.
-
+The lucky draw is anticipated to attract people who are risk-on (they enjoy gambling, and are less worried about getting vaccinated), and poorer individuals for whom winning money is more attractive. These target groups are desirable as they are less likely to get the vaccine, and the government would like to maximise the number of vaccinated people. Additionally, if there are individuals who want to be vaccinated but procrastinate getting the vaccine (e.g. naïve hyperbolic discounters), setting a deadline for the lucky draw could increase the utility of getting the vaccine earlier enough to overcome the procrastination problem. There is no downside or extra cost for having people enter the lucky draw who would otherwise still have got the vaccine. It is reasonable to assume that the introduction of a lottery would not deter someone from 
 
 # Treatment and Data \label{treatment}
 
-The two main institutions for this field experiment would be the South African government, the Department of Health in particular, and 
+The two main partner institutions for this field experiment would be the South African government -- the Department of Health in particular -- and the CRAM team and partners^[The CRAM project is supported by the Department of Planning Monitoring and Evaluation (DPME), the Research on Socioeconomic Policy (RESEP) group at Stellenbosch University, and the Southern Africa Labour and Development Research Unit (SALDRU) at UCT.]. Vaccine data is collected by health professionals at pharmacies, clinics and other vaccination sites around South Africa. Currently, the EVDS captures a vaccinee's names, Identity Number, medical aid details, residential address, email address, phone numbers, employment details, professional category, and health status. The only additional information needed for the experiment is the name, ID number, and phone number of the referring individual (from treatment group 3). The person receiving the vaccine is responsible for supplying these details to the vaccine administrator. An SMS will be sent to the friend getting vaccinated and the referring individual, both of whom will be asked to confirm that the details of the referring participant are correct. The name of the data collection agent at the vaccine site is also recorded. If the friend (the non-referring individual) wins the lottery, the person who captured the vaccine details will receive R10,000. This should act as an incentive for healthcare workers to correctly capture the referral details.     
+
+The other
+
+Funding for the experiment would need to cover: R9,000,000 for the cash prizes, the admin fees associated with the SMS program and R90,000 in incentive fees for the personnel who captured the lottery winners' vaccine information. It is assumed that 
+
+
+COVID-19 Africa Rapid Grant Fund
 
 •	an explanation of how the treatments will be administered and data gathered (including proposed partner institutions);
 
